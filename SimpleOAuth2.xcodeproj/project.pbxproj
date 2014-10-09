@@ -108,10 +108,10 @@
 		AFBDF4FA19E57F1A001D1061 /* SimpleOAuth2 */ = {
 			isa = PBXGroup;
 			children = (
-				AFBDF52119E58138001D1061 /* AppCode */,
-				AFBDF4FB19E57F1A001D1061 /* Supporting Files */,
 				AFEB339E19E651180058A4B5 /* SimpleOAuth2.h */,
 				AFEB339F19E651180058A4B5 /* SimpleOAuth2.m */,
+				AFBDF52119E58138001D1061 /* AppCode */,
+				AFBDF4FB19E57F1A001D1061 /* Supporting Files */,
 			);
 			path = SimpleOAuth2;
 			sourceTree = "<group>";
