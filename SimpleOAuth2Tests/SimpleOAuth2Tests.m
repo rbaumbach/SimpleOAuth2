@@ -19,20 +19,19 @@ describe(@"SimpleOAuth2", ^{
     __block SimpleOAuth2 *simpleOAuth2;
     
     beforeEach(^{
-        simpleOAuth2 = [[SimpleOAuth2 alloc] initWithAuthenticationURL:[NSURL URLWithString:@"https://api.stark.industries.com"]];
+        simpleOAuth2 = [[SimpleOAuth2 alloc] init];
     });
     
-    it(@"has an authURL", ^{
-        expect(simpleOAuth2.authURL).to.equal([NSURL URLWithString:@"https://api.stark.industries.com"]);
+    it(@"has a default response serializer for JSON", ^{
+        expect(simpleOAuth2.responseSerializer).to.beInstanceOf([AFJSONResponseSerializer class]);
     });
     
-    it(@"has an AFHTTPSessionManager", ^{
+    it(@"has an AFHTTPSessionManager with default response serializer for JSON", ^{
         expect(simpleOAuth2.sessionManager).to.beInstanceOf([AFHTTPSessionManager class]);
-        expect(simpleOAuth2.sessionManager.baseURL).to.equal([NSURL URLWithString:@"https://api.stark.industries.com"]);
-        expect(simpleOAuth2.sessionManager.responseSerializer).to.beInstanceOf([AFJSONResponseSerializer class]);
+        expect(simpleOAuth2.sessionManager.responseSerializer).to.equal(simpleOAuth2.responseSerializer);
     });
     
-    describe(@"#authenticateWithAuthCode:tokenParameters:success:failure:", ^{
+    describe(@"#authenticateOAuthClient:tokenParameters:success:failure:", ^{
         __block FakeAFHTTPSessionManager *fakeSessionManager;
         __block id retResponseObject;
         __block NSError *retError;
@@ -64,11 +63,11 @@ describe(@"SimpleOAuth2", ^{
                                                      }
                                           };
                 
-                [simpleOAuth2 authenticateClientAtEndpoint:@"/jarvis/logmein/"
-                                           tokenParameters:fakeTokenParameters
-                                                   success:^(id authResponseObject) {
-                                                       retResponseObject = authResponseObject;
-                                                   } failure:nil];
+                [simpleOAuth2 authenticateOAuthClient:[NSURL URLWithString:@"https://api.stark.industries.com/jarvis/logmein"]
+                                      tokenParameters:fakeTokenParameters
+                                              success:^(id authResponseObject) {
+                                                  retResponseObject = authResponseObject;
+                                              } failure:nil];
                 
                 if (fakeSessionManager.postSuccessBlock) {
                     fakeSessionManager.postSuccessBlock(nil, fakeAuthResponseObject);
@@ -84,7 +83,7 @@ describe(@"SimpleOAuth2", ^{
             });
             
             it(@"makes a POST call with the correct endpoint and parameters to Instagram", ^{
-                expect(fakeSessionManager.postURLString).to.equal(@"/jarvis/logmein/");
+                expect(fakeSessionManager.postURLString).to.equal(@"https://api.stark.industries.com/jarvis/logmein");
                 expect(fakeSessionManager.postParameters).to.equal(@{ @"code"        : @"open-sesame",
                                                                       @"id"          : @"none-needed",
                                                                       @"who-cares"   : @"not-i",
@@ -98,12 +97,13 @@ describe(@"SimpleOAuth2", ^{
             beforeEach(^{
                 fakeError = OCMClassMock([NSError class]);
                 
-                [simpleOAuth2 authenticateClientAtEndpoint:nil
-                                           tokenParameters:nil
-                                                   success:nil
-                                                   failure:^(NSError *error) {
-                                                       retError = error;
-                                                   }];
+                [simpleOAuth2 authenticateOAuthClient:nil
+                                      tokenParameters:nil
+                                              success:^(id authResponseObject) {
+                                                  retResponseObject = authResponseObject;
+                                              } failure:^(NSError *error) {
+                                                  retError = error;
+                                              }];
                 
                 fakeSessionManager.postFailureBlock(nil, fakeError);
             });

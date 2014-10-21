@@ -4,7 +4,6 @@
 
 @interface SimpleOAuth2 ()
 
-@property (strong, nonatomic, readwrite) NSURL *authURL;
 @property (strong, nonatomic) AFHTTPSessionManager *sessionManager;
 
 @end
@@ -13,25 +12,25 @@
 
 #pragma mark - Init Methods
 
-- (instancetype)initWithAuthenticationURL:(NSURL *)authURL
+- (instancetype)init
 {
     self = [super init];
     if (self) {
-        self.authURL = authURL;
-        self.sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:self.authURL];
-        self.sessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
+        self.responseSerializer = [AFJSONResponseSerializer serializer];
+        self.sessionManager = [[AFHTTPSessionManager alloc] init];
+        self.sessionManager.responseSerializer = self.responseSerializer;
     }
     return self;
 }
 
 #pragma mark - Public Methods
 
-- (void)authenticateClientAtEndpoint:(NSString *)authEndpoint
-                     tokenParameters:(NSDictionary *)tokenParameters
-                             success:(void (^)(id authResponseObject))success
-                             failure:(void (^)(NSError *error))failure
+- (void)authenticateOAuthClient:(NSURL *)authURL
+                tokenParameters:(NSDictionary *)tokenParameters
+                        success:(void (^)(id authResponseObject))success
+                        failure:(void (^)(NSError *error))failure
 {
-    [self.sessionManager POST:authEndpoint
+    [self.sessionManager POST:authURL.absoluteString
                    parameters:tokenParameters
                       success:^(NSURLSessionDataTask *task, id responseObject) {
                           success(responseObject);
