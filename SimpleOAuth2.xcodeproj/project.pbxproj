@@ -10,6 +10,9 @@
 		9CC6CD377451CEB74AAC13BE /* libPods-SimpleOAuth2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8460C539560826885F959F /* libPods-SimpleOAuth2.a */; };
 		AF1A854219EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1A854119EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m */; };
 		AF1A854319EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1A854119EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m */; };
+		AF6B1E8C19F62B490058292A /* SimpleOAuth2ErrorAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B1E8B19F62B490058292A /* SimpleOAuth2ErrorAlertView.m */; };
+		AF6B1E8F19F62D960058292A /* SimpleOAuth2ErrorAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B1E8E19F62D960058292A /* SimpleOAuth2ErrorAlertView.m */; };
+		AF6B1E9019F62D960058292A /* SimpleOAuth2ErrorAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B1E8E19F62D960058292A /* SimpleOAuth2ErrorAlertView.m */; };
 		AFBDF4FE19E57F1A001D1061 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBDF4FD19E57F1A001D1061 /* main.m */; };
 		AFBDF50119E57F1A001D1061 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBDF50019E57F1A001D1061 /* AppDelegate.m */; };
 		AFBDF50419E57F1A001D1061 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBDF50319E57F1A001D1061 /* ViewController.m */; };
@@ -41,6 +44,9 @@
 		AB8460C539560826885F959F /* libPods-SimpleOAuth2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleOAuth2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1A854019EC301400F38EB2 /* NSURLRequest+SimpleOAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+SimpleOAuth2.h"; path = "Source/NSURLRequest+SimpleOAuth2.h"; sourceTree = "<group>"; };
 		AF1A854119EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+SimpleOAuth2.m"; path = "Source/NSURLRequest+SimpleOAuth2.m"; sourceTree = "<group>"; };
+		AF6B1E8B19F62B490058292A /* SimpleOAuth2ErrorAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleOAuth2ErrorAlertView.m; sourceTree = "<group>"; };
+		AF6B1E8D19F62D960058292A /* SimpleOAuth2ErrorAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleOAuth2ErrorAlertView.h; path = Source/SimpleOAuth2ErrorAlertView.h; sourceTree = "<group>"; };
+		AF6B1E8E19F62D960058292A /* SimpleOAuth2ErrorAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleOAuth2ErrorAlertView.m; path = Source/SimpleOAuth2ErrorAlertView.m; sourceTree = "<group>"; };
 		AFBDF4F819E57F1A001D1061 /* SimpleOAuth2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleOAuth2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBDF4FC19E57F1A001D1061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFBDF4FD19E57F1A001D1061 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,6 +124,8 @@
 				AFEB339F19E651180058A4B5 /* SimpleOAuth2.m */,
 				AF1A854019EC301400F38EB2 /* NSURLRequest+SimpleOAuth2.h */,
 				AF1A854119EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m */,
+				AF6B1E8D19F62D960058292A /* SimpleOAuth2ErrorAlertView.h */,
+				AF6B1E8E19F62D960058292A /* SimpleOAuth2ErrorAlertView.m */,
 				AFBDF52119E58138001D1061 /* AppCode */,
 				AFBDF4FB19E57F1A001D1061 /* Supporting Files */,
 			);
@@ -138,6 +146,7 @@
 			children = (
 				AFBDF51719E57F1A001D1061 /* SimpleOAuth2Tests.m */,
 				AFFDC23919EE00D10085FD02 /* NSURLRequest+SimpleOAuth2Tests.m */,
+				AF6B1E8B19F62B490058292A /* SimpleOAuth2ErrorAlertView.m */,
 				AFBDF51519E57F1A001D1061 /* Supporting Files */,
 			);
 			path = SimpleOAuth2Tests;
@@ -344,6 +353,7 @@
 				AFBDF50419E57F1A001D1061 /* ViewController.m in Sources */,
 				AFBDF50119E57F1A001D1061 /* AppDelegate.m in Sources */,
 				AFEB33A019E651180058A4B5 /* SimpleOAuth2.m in Sources */,
+				AF6B1E8F19F62D960058292A /* SimpleOAuth2ErrorAlertView.m in Sources */,
 				AFBDF4FE19E57F1A001D1061 /* main.m in Sources */,
 				AF1A854219EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m in Sources */,
 			);
@@ -356,6 +366,8 @@
 				AFEB33A119E651180058A4B5 /* SimpleOAuth2.m in Sources */,
 				AFBDF51819E57F1A001D1061 /* SimpleOAuth2Tests.m in Sources */,
 				AFFDC23A19EE00D10085FD02 /* NSURLRequest+SimpleOAuth2Tests.m in Sources */,
+				AF6B1E9019F62D960058292A /* SimpleOAuth2ErrorAlertView.m in Sources */,
+				AF6B1E8C19F62B490058292A /* SimpleOAuth2ErrorAlertView.m in Sources */,
 				AF1A854319EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
