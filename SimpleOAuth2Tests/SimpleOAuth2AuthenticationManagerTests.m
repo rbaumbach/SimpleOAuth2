@@ -4,31 +4,31 @@
 #import <OCMock/OCMock.h>
 #import <AFNetworking/AFNetworking.h>
 #import <RealFakes/RealFakes.h>
-#import "SimpleOAuth2.h"
+#import "SimpleOAuth2AuthenticationManager.h"
 
 
-@interface SimpleOAuth2 ()
+@interface SimpleOAuth2AuthenticationManager ()
 
 @property (strong, nonatomic) AFHTTPSessionManager *sessionManager;
 
 @end
 
-SpecBegin(SimpleOAuth2Tests)
+SpecBegin(SimpleOAuth2AuthenticationManagerTests)
 
-describe(@"SimpleOAuth2", ^{
-    __block SimpleOAuth2 *simpleOAuth2;
+describe(@"SimpleOAuth2AuthenticationManager", ^{
+    __block SimpleOAuth2AuthenticationManager *authManager;
     
     beforeEach(^{
-        simpleOAuth2 = [[SimpleOAuth2 alloc] init];
+        authManager = [[SimpleOAuth2AuthenticationManager alloc] init];
     });
     
     it(@"has a default response serializer for JSON", ^{
-        expect(simpleOAuth2.responseSerializer).to.beInstanceOf([AFJSONResponseSerializer class]);
+        expect(authManager.responseSerializer).to.beInstanceOf([AFJSONResponseSerializer class]);
     });
     
     it(@"has an AFHTTPSessionManager with default response serializer for JSON", ^{
-        expect(simpleOAuth2.sessionManager).to.beInstanceOf([AFHTTPSessionManager class]);
-        expect(simpleOAuth2.sessionManager.responseSerializer).to.equal(simpleOAuth2.responseSerializer);
+        expect(authManager.sessionManager).to.beInstanceOf([AFHTTPSessionManager class]);
+        expect(authManager.sessionManager.responseSerializer).to.equal(authManager.responseSerializer);
     });
     
     describe(@"#authenticateOAuthClient:tokenParameters:success:failure:", ^{
@@ -38,7 +38,7 @@ describe(@"SimpleOAuth2", ^{
         
         beforeEach(^{
             fakeSessionManager = [[FakeAFHTTPSessionManager alloc] init];
-            simpleOAuth2.sessionManager = fakeSessionManager;
+            authManager.sessionManager = fakeSessionManager;
         });
         
         context(@"on success", ^{
@@ -63,7 +63,7 @@ describe(@"SimpleOAuth2", ^{
                                                      }
                                           };
                 
-                [simpleOAuth2 authenticateOAuthClient:[NSURL URLWithString:@"https://api.stark.industries.com/jarvis/logmein"]
+                [authManager authenticateOAuthClient:[NSURL URLWithString:@"https://api.stark.industries.com/jarvis/logmein"]
                                       tokenParameters:fakeTokenParameters
                                               success:^(id authResponseObject) {
                                                   retResponseObject = authResponseObject;
@@ -97,7 +97,7 @@ describe(@"SimpleOAuth2", ^{
             beforeEach(^{
                 fakeError = OCMClassMock([NSError class]);
                 
-                [simpleOAuth2 authenticateOAuthClient:nil
+                [authManager authenticateOAuthClient:nil
                                       tokenParameters:nil
                                               success:^(id authResponseObject) {
                                                   retResponseObject = authResponseObject;

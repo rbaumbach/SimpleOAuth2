@@ -3,7 +3,7 @@
 
 @class AFHTTPResponseSerializer;
 
-@interface SimpleOAuth2 : NSObject
+@interface SimpleOAuth2AuthenticationManager : NSObject
 
 @property (strong, nonatomic) AFHTTPResponseSerializer *responseSerializer;
 

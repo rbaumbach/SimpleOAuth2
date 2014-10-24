@@ -1,14 +1,14 @@
 #import <AFNetworking/AFNetworking.h>
-#import "SimpleOAuth2.h"
+#import "SimpleOAuth2AuthenticationManager.h"
 
 
-@interface SimpleOAuth2 ()
+@interface SimpleOAuth2AuthenticationManager ()
 
 @property (strong, nonatomic) AFHTTPSessionManager *sessionManager;
 
 @end
 
-@implementation SimpleOAuth2
+@implementation SimpleOAuth2AuthenticationManager
 
 #pragma mark - Init Methods
 
