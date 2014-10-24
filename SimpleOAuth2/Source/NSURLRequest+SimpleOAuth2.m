@@ -1,4 +1,5 @@
 @import Foundation;
+#import "NSURLRequest+SimpleOAuth2.h"
 
 
 NSString *const AuthorizationCodeParam = @"?code=";
