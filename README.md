@@ -1,4 +1,4 @@
-# SimpleOAuth2  [![License](http://b.repl.ca/v1/License-MIT-blue.png)](https://github.com/rbaumbach/SimpleOAuth2/blob/master/MIT-LICENSE.txt)
+# SimpleOAuth2 [![Build Status](https://travis-ci.org/rbaumbach/SimpleOAuth2.svg?branch=master)](https://travis-ci.org/rbaumbach/SimpleOAuth2) [![License](http://b.repl.ca/v1/License-MIT-blue.png)](https://github.com/rbaumbach/SimpleOAuth2/blob/master/MIT-LICENSE.txt)
 
 A simple OAuth2 helper
 
