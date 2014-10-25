@@ -49,6 +49,8 @@ rake test   # Run Tests
 
 ## Version History
 
+Version history can be found at the [SimpleOAuth2 wiki](https://github.com/rbaumbach/InstagramSimpleOAuth/wiki/Version-History).
+
 ## Suggestions, requests, and feedback
 
 Thanks for checking out SimpleOAuth2 for your OAuth2 needs.  Any feedback can be can be sent to: rbaumbach.github@gmail.com.
