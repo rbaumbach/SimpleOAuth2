@@ -49,7 +49,7 @@ rake test   # Run Tests
 
 ## Version History
 
-Version history can be found at the [SimpleOAuth2 wiki](https://github.com/rbaumbach/InstagramSimpleOAuth/wiki/Version-History).
+Version history can be found at the [SimpleOAuth2 wiki](https://github.com/rbaumbach/SimpleOAuth2/wiki/Version-History).
 
 ## Suggestions, requests, and feedback
 
