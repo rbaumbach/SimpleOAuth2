@@ -74,7 +74,7 @@ describe(@"SimpleOAuth2AuthenticationManager", ^{
                 }
             });
 
-            it(@"calls success with instagramLoginResponse", ^{
+            it(@"calls success with authResponseObject", ^{
                 expect(retResponseObject[@"access_token"]).to.equal(@"SFII-game-token");
                 expect(retResponseObject[@"user"][@"id"]).to.equal(@"1234567890");
                 expect(retResponseObject[@"user"][@"username"]).to.equal(@"ryu");
@@ -82,7 +82,7 @@ describe(@"SimpleOAuth2AuthenticationManager", ^{
                 expect(retResponseObject[@"user"][@"profile_picture"]).to.equal(@"http://upload.wikimedia.org/wikipedia/en/e/e5/Ryu_TvC.png");
             });
             
-            it(@"makes a POST call with the correct endpoint and parameters to Instagram", ^{
+            it(@"makes a POST call with the correct endpoint and parameters", ^{
                 expect(fakeSessionManager.postURLString).to.equal(@"https://api.stark.industries.com/jarvis/logmein");
                 expect(fakeSessionManager.postParameters).to.equal(@{ @"code"        : @"open-sesame",
                                                                       @"id"          : @"none-needed",
