@@ -42,6 +42,7 @@
 		AF1A854019EC301400F38EB2 /* NSURLRequest+SimpleOAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+SimpleOAuth2.h"; path = "Source/NSURLRequest+SimpleOAuth2.h"; sourceTree = "<group>"; };
 		AF1A854119EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+SimpleOAuth2.m"; path = "Source/NSURLRequest+SimpleOAuth2.m"; sourceTree = "<group>"; };
 		AF39156C19FA946E00F39FD3 /* SimpleOAuth2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SimpleOAuth2.h; path = Source/SimpleOAuth2.h; sourceTree = "<group>"; };
+		AF728AEE1A0EB23B00E5EA26 /* TokenParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TokenParameters.h; path = Source/TokenParameters.h; sourceTree = "<group>"; };
 		AFBDF4F819E57F1A001D1061 /* SimpleOAuth2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleOAuth2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBDF4FC19E57F1A001D1061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFBDF4FD19E57F1A001D1061 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				AF39156C19FA946E00F39FD3 /* SimpleOAuth2.h */,
+				AF728AEE1A0EB23B00E5EA26 /* TokenParameters.h */,
 				AFEB339E19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.h */,
 				AFEB339F19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m */,
 				AF1A854019EC301400F38EB2 /* NSURLRequest+SimpleOAuth2.h */,

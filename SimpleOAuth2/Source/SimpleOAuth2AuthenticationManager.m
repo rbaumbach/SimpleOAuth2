@@ -47,12 +47,26 @@
 #pragma mark - Public Methods
 
 - (void)authenticateOAuthClient:(NSURL *)authURL
-                tokenParameters:(NSDictionary *)tokenParameters
+      tokenParametersDictionary:(NSDictionary *)tokenParameters
                         success:(void (^)(id authResponseObject))success
                         failure:(void (^)(NSError *error))failure
 {
     [self.sessionManager POST:authURL.absoluteString
                    parameters:tokenParameters
+                      success:^(NSURLSessionDataTask *task, id responseObject) {
+                          success(responseObject);
+                      } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                          failure(error);
+                      }];
+}
+
+- (void)authenticateOAuthClient:(NSURL *)authURL
+                tokenParameters:(id<TokenParameters>)tokenParameters
+                        success:(void (^)(id authResponseObject))success
+                        failure:(void (^)(NSError *error))failure
+{
+    [self.sessionManager POST:authURL.absoluteString
+                   parameters:[tokenParameters build]
                       success:^(NSURLSessionDataTask *task, id responseObject) {
                           success(responseObject);
                       } failure:^(NSURLSessionDataTask *task, NSError *error) {

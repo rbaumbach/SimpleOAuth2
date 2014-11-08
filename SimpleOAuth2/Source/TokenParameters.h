@@ -19,24 +19,8 @@
 //OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 //WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-@import Foundation;
-#import "TokenParameters.h"
+@protocol TokenParameters <NSObject>
 
-
-@class AFHTTPResponseSerializer;
-
-@interface SimpleOAuth2AuthenticationManager : NSObject
-
-@property (strong, nonatomic) AFHTTPResponseSerializer *responseSerializer;
-
-- (void)authenticateOAuthClient:(NSURL *)authURL
-                tokenParametersDictionary:(NSDictionary *)tokenParameters
-                        success:(void (^)(id authResponseObject))success
-                        failure:(void (^)(NSError *error))failure;
-
-- (void)authenticateOAuthClient:(NSURL *)authURL
-                tokenParameters:(id<TokenParameters>)tokenParameters
-                        success:(void (^)(id authResponseObject))success
-                        failure:(void (^)(NSError *error))failure;
+- (NSDictionary *)build;
 
 @end
