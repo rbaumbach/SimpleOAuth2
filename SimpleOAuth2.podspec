@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'SimpleOAuth2'
-  s.version               = '0.0.2'
+  s.version               = '0.0.3'
   s.summary               = 'A Simple OAuth2 Helper.'
   s.homepage              = 'https://github.com/rbaumbach/SimpleOAuth2'
   s.license               = { :type => 'MIT', :file => 'MIT-LICENSE.txt' }
