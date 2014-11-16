@@ -21,10 +21,10 @@
 
 @import Foundation;
 #import "NSURLRequest+SimpleOAuth2.h"
+#import "SimpleOAuth2Utils.h"
 
 
 NSString *const AuthorizationCodeParam = @"?code=";
-NSString *const ScopePermissionsParam = @"&scope=";
 
 @implementation NSURLRequest (SimpleOAuth2)
 
@@ -50,21 +50,35 @@ NSString *const ScopePermissionsParam = @"&scope=";
 - (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL
                               permissionScope:(NSArray *)permissionScope
 {
-    NSMutableString *webLoginURLString = [webLoginURL.absoluteString mutableCopy];
+    SimpleOAuth2Utils *simpleOAuth2Utils = [[SimpleOAuth2Utils alloc] init];
     
-    if (permissionScope.count > 0) {
-        [webLoginURLString appendString:ScopePermissionsParam];
-        
-        [permissionScope enumerateObjectsUsingBlock:^(NSString *permission, NSUInteger idx, BOOL *stop) {
-            if (idx != 0) {
-                [webLoginURLString appendString:@"+"];
-            }
-            
-            [webLoginURLString appendString:permission];
-        }];
-    }
+    return [simpleOAuth2Utils buildWebLoginRequestWithURL:webLoginURL
+                                          permissionScope:permissionScope];
+}
+
++ (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL
+                              permissionScope:(NSArray *)permissionScope
+{
+    SimpleOAuth2Utils *simpleOAuth2Utils = [[SimpleOAuth2Utils alloc] init];
     
-    return [NSURLRequest requestWithURL:[NSURL URLWithString:webLoginURLString]];
+    return [simpleOAuth2Utils buildWebLoginRequestWithURL:webLoginURL
+                                          permissionScope:permissionScope];
+}
+
+- (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL
+{
+    SimpleOAuth2Utils *simpleOAuth2Utils = [[SimpleOAuth2Utils alloc] init];
+    
+    return [simpleOAuth2Utils buildWebLoginRequestWithURL:webLoginURL
+                                          permissionScope:nil];
+}
+
++ (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL
+{
+    SimpleOAuth2Utils *simpleOAuth2Utils = [[SimpleOAuth2Utils alloc] init];
+    
+    return [simpleOAuth2Utils buildWebLoginRequestWithURL:webLoginURL
+                                          permissionScope:nil];
 }
 
 @end

@@ -19,21 +19,32 @@
 //OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 //WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-@import Foundation;
+#import "SimpleOAuth2Utils.h"
 
 
-@interface NSURLRequest (SimpleOAuth2)
+NSString *const ScopePermissionsParam = @"&scope=";
 
-- (NSString *)oAuth2AuthorizationCode;
+
+@implementation SimpleOAuth2Utils
 
 - (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL
-                              permissionScope:(NSArray *)permissionScope;
-
-+ (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL
-                              permissionScope:(NSArray *)permissionScope;
-
-- (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL;
-
-+ (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL;
+                              permissionScope:(NSArray *)permissionScope
+{
+    NSMutableString *webLoginURLString = [webLoginURL.absoluteString mutableCopy];
+    
+    if (permissionScope.count > 0) {
+        [webLoginURLString appendString:ScopePermissionsParam];
+        
+        [permissionScope enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            if (idx != 0) {
+                [webLoginURLString appendString:@"+"];
+            }
+            
+            [webLoginURLString appendString:(NSString *)obj];
+        }];
+    }
+    
+    return [NSURLRequest requestWithURL:[NSURL URLWithString:webLoginURLString]];
+}
 
 @end

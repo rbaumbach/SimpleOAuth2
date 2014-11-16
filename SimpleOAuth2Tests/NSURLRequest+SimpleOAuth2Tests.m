@@ -72,6 +72,43 @@ describe(@"NSURLRequest+SimpleOAuth2", ^{
             expect(builtRequestWithPermissionScope.URL).to.equal([NSURL URLWithString:@"http://scopes.r.us&scope=likes+dislikes"]);
         });
     });
+    
+    describe(@"#buildWebLoginRequestWithURL:", ^{
+        __block NSURLRequest *builtRequest;
+        
+        beforeEach(^{
+            builtRequest = [request buildWebLoginRequestWithURL:[NSURL URLWithString:@"http://scopes.r.us"]];
+        });
+        
+        it(@"builds proper request", ^{
+            expect(builtRequest.URL).to.equal([NSURL URLWithString:@"http://scopes.r.us"]);
+        });
+    });
+    
+    describe(@".buildWebLoginRequestWithURL:permissionScope:", ^{
+        __block NSURLRequest *builtRequestWithPermissionScope;
+        
+        beforeEach(^{
+            builtRequestWithPermissionScope = [NSURLRequest buildWebLoginRequestWithURL:[NSURL URLWithString:@"http://scopes.r.us"]
+                                                                        permissionScope:@[@"likes", @"dislikes"]];
+        });
+        
+        it(@"builds proper request with permission scope attached", ^{
+            expect(builtRequestWithPermissionScope.URL).to.equal([NSURL URLWithString:@"http://scopes.r.us&scope=likes+dislikes"]);
+        });
+    });
+    
+    describe(@".buildWebLoginRequestWithURL:", ^{
+        __block NSURLRequest *builtRequest;
+        
+        beforeEach(^{
+            builtRequest = [NSURLRequest buildWebLoginRequestWithURL:[NSURL URLWithString:@"http://scopes.r.us"]];
+        });
+        
+        it(@"builds proper request", ^{
+            expect(builtRequest.URL).to.equal([NSURL URLWithString:@"http://scopes.r.us"]);
+        });
+    });
 });
 
 SpecEnd

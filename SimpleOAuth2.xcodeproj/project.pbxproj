@@ -17,6 +17,9 @@
 		AFBDF50919E57F1A001D1061 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFBDF50819E57F1A001D1061 /* Images.xcassets */; };
 		AFBDF50C19E57F1A001D1061 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBDF50A19E57F1A001D1061 /* LaunchScreen.xib */; };
 		AFBDF51819E57F1A001D1061 /* SimpleOAuth2AuthenticationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBDF51719E57F1A001D1061 /* SimpleOAuth2AuthenticationManagerTests.m */; };
+		AFC0AB011A186E9F00025EF8 /* SimpleOAuth2Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AB001A186E9F00025EF8 /* SimpleOAuth2Utils.m */; };
+		AFC0AB021A186E9F00025EF8 /* SimpleOAuth2Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AB001A186E9F00025EF8 /* SimpleOAuth2Utils.m */; };
+		AFC0AB041A186FC700025EF8 /* SimpleOAuth2UtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AB031A186FC700025EF8 /* SimpleOAuth2UtilsTests.m */; };
 		AFEB33A019E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFEB339F19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m */; };
 		AFEB33A119E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFEB339F19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m */; };
 		AFFDC23A19EE00D10085FD02 /* NSURLRequest+SimpleOAuth2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFDC23919EE00D10085FD02 /* NSURLRequest+SimpleOAuth2Tests.m */; };
@@ -56,6 +59,9 @@
 		AFBDF51119E57F1A001D1061 /* SimpleOAuth2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleOAuth2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBDF51619E57F1A001D1061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFBDF51719E57F1A001D1061 /* SimpleOAuth2AuthenticationManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleOAuth2AuthenticationManagerTests.m; sourceTree = "<group>"; };
+		AFC0AAFF1A186E9F00025EF8 /* SimpleOAuth2Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleOAuth2Utils.h; path = Source/SimpleOAuth2Utils.h; sourceTree = "<group>"; };
+		AFC0AB001A186E9F00025EF8 /* SimpleOAuth2Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleOAuth2Utils.m; path = Source/SimpleOAuth2Utils.m; sourceTree = "<group>"; };
+		AFC0AB031A186FC700025EF8 /* SimpleOAuth2UtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleOAuth2UtilsTests.m; sourceTree = "<group>"; };
 		AFEB339E19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleOAuth2AuthenticationManager.h; path = Source/SimpleOAuth2AuthenticationManager.h; sourceTree = "<group>"; };
 		AFEB339F19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleOAuth2AuthenticationManager.m; path = Source/SimpleOAuth2AuthenticationManager.m; sourceTree = "<group>"; };
 		AFFDC23919EE00D10085FD02 /* NSURLRequest+SimpleOAuth2Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+SimpleOAuth2Tests.m"; sourceTree = "<group>"; };
@@ -122,6 +128,8 @@
 				AFEB339F19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m */,
 				AF1A854019EC301400F38EB2 /* NSURLRequest+SimpleOAuth2.h */,
 				AF1A854119EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m */,
+				AFC0AAFF1A186E9F00025EF8 /* SimpleOAuth2Utils.h */,
+				AFC0AB001A186E9F00025EF8 /* SimpleOAuth2Utils.m */,
 				AFBDF52119E58138001D1061 /* AppCode */,
 				AFBDF4FB19E57F1A001D1061 /* Supporting Files */,
 			);
@@ -142,6 +150,7 @@
 			children = (
 				AFBDF51719E57F1A001D1061 /* SimpleOAuth2AuthenticationManagerTests.m */,
 				AFFDC23919EE00D10085FD02 /* NSURLRequest+SimpleOAuth2Tests.m */,
+				AFC0AB031A186FC700025EF8 /* SimpleOAuth2UtilsTests.m */,
 				AFBDF51519E57F1A001D1061 /* Supporting Files */,
 			);
 			path = SimpleOAuth2Tests;
@@ -349,6 +358,7 @@
 				AFBDF50119E57F1A001D1061 /* AppDelegate.m in Sources */,
 				AFEB33A019E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m in Sources */,
 				AFBDF4FE19E57F1A001D1061 /* main.m in Sources */,
+				AFC0AB011A186E9F00025EF8 /* SimpleOAuth2Utils.m in Sources */,
 				AF1A854219EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,8 +369,10 @@
 			files = (
 				AFEB33A119E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m in Sources */,
 				AFBDF51819E57F1A001D1061 /* SimpleOAuth2AuthenticationManagerTests.m in Sources */,
+				AFC0AB041A186FC700025EF8 /* SimpleOAuth2UtilsTests.m in Sources */,
 				AFFDC23A19EE00D10085FD02 /* NSURLRequest+SimpleOAuth2Tests.m in Sources */,
 				AF1A854319EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m in Sources */,
+				AFC0AB021A186E9F00025EF8 /* SimpleOAuth2Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

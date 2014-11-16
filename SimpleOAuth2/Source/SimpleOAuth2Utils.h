@@ -22,18 +22,9 @@
 @import Foundation;
 
 
-@interface NSURLRequest (SimpleOAuth2)
-
-- (NSString *)oAuth2AuthorizationCode;
+@interface SimpleOAuth2Utils : NSObject
 
 - (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL
                               permissionScope:(NSArray *)permissionScope;
-
-+ (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL
-                              permissionScope:(NSArray *)permissionScope;
-
-- (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL;
-
-+ (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL;
 
 @end
