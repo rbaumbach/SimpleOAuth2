@@ -24,7 +24,7 @@
 #import "SimpleOAuth2Utils.h"
 
 
-NSString *const AuthorizationCodeParam = @"?code=";
+NSString *const AuthorizationCodeParam = @"code=";
 
 @implementation NSURLRequest (SimpleOAuth2)
 

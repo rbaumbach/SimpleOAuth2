@@ -35,6 +35,17 @@ describe(@"NSURLRequest+SimpleOAuth2", ^{
                     expect(authorizationCode).to.equal(@"123CODEZ");
                 });
             });
+            
+            context(@"URL has empty state parameter (Box)", ^{
+                beforeEach(^{
+                    request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://lessFancy.donuts/?state=&code=123CODEZ"]];
+                    authorizationCode = [request oAuth2AuthorizationCode];
+                });
+                
+                it(@"returns the authorization code", ^{
+                    expect(authorizationCode).to.equal(@"123CODEZ");
+                });
+            });
         });
         
         context(@"request DOES NOT contain auth code", ^{
