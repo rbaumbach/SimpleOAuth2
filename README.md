@@ -20,31 +20,24 @@ A simple OAuth2 helper
 ## Tools
 
 * Use SimpleOAuth2AuthenticationManager to authenticate an OAuth2 client.
-* The NSURLRequest+SimpleOAuth2 catgeory provides a helper method to obtain a authorization code from an NSURLRequest from an API.  It also has a method to build a web login request with an optional permissionScope.  If no permission scope is needed, pass in nil. 
+* The NSURLRequest+SimpleOAuth2 catgeory provides a helper method to obtain a authorization code from an NSURLRequest from an API.  It also has a method to build a web login request with an optional permissionScope.  If no permission scope is needed, pass in nil.
 
 ## Testing
 
 * Prerequisites: [ruby](https://github.com/sstephenson/rbenv), [ruby gems](https://rubygems.org/pages/download), [bundler](http://bundler.io)
 
-To use the included Rakefile to run expecta tests, run the setup.sh script to bundle required gems and cocoapods:
+This project has been setup to use [fastlane](https://fastlane.tools) to run the tests.
+
+First, run the setup.sh script to bundle required gems and Cocoapods when in the project directory:
 
 ```bash
 $ ./setup.sh
 ```
 
-Then run rake to run the tests on the command line:
+And then use fastlane to run all (Debug and Release) the tests on the command line:
 
 ```bash
-$ bundle exec rake
-```
-
-Additional rake tasks can be seen using rake -T:
-
-```bash
-$ rake -T
-rake build  # Build SimpleOAuth2
-rake clean  # Clean
-rake test   # Run Tests
+$ bundle exec fastlane test
 ```
 
 ## Version History
