@@ -37,7 +37,7 @@ $ ./setup.sh
 And then use fastlane to run all (Debug and Release) the tests on the command line:
 
 ```bash
-$ bundle exec fastlane test
+$ bundle exec fastlane specs
 ```
 
 ## Version History
