@@ -1,10 +1,9 @@
 #import <Specta/Specta.h>
-#define EXP_SHORTHAND
 #import <Expecta/Expecta.h>
 #import <OCMock/OCMock.h>
-#import <AFNetworking/AFNetworking.h>
-#import <RealFakes/RealFakes.h>
+
 #import "SimpleOAuth2AuthenticationManager.h"
+#import "FakeAFHTTPSessionManager.h"
 
 
 @interface SimpleOAuth2AuthenticationManager ()

@@ -1,4 +1,4 @@
-//Copyright (c) 2014 Ryan Baumbach <rbaumbach.github@gmail.com>
+//Copyright (c) 2017 Ryan Baumbach <github@ryan.codes>
 //
 //Permission is hereby granted, free of charge, to any person obtaining
 //a copy of this software and associated documentation files (the "Software"),
@@ -53,11 +53,12 @@
 {
     [self.sessionManager POST:authURL.absoluteString
                    parameters:tokenParameters
-                      success:^(NSURLSessionDataTask *task, id responseObject) {
-                          success(responseObject);
-                      } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                          failure(error);
-                      }];
+                     progress:nil
+                      success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        success(responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        failure(error);
+    }];
 }
 
 - (void)authenticateOAuthClient:(NSURL *)authURL
@@ -67,9 +68,10 @@
 {
     [self.sessionManager POST:authURL.absoluteString
                    parameters:[tokenParameters build]
-                      success:^(NSURLSessionDataTask *task, id responseObject) {
+                     progress:nil
+                      success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                           success(responseObject);
-                      } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                      } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                           failure(error);
                       }];
 }

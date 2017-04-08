@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9CC6CD377451CEB74AAC13BE /* libPods-SimpleOAuth2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8460C539560826885F959F /* libPods-SimpleOAuth2.a */; };
+		02C743BFC04FF382360D01C7 /* libPods-SimpleOAuth2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 683996FA9E32EFB9667E5EBC /* libPods-SimpleOAuth2Tests.a */; };
+		8C944708085EF63F90E48BE7 /* libPods-SimpleOAuth2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3BD81855CE0D420C40A156 /* libPods-SimpleOAuth2.a */; };
+		9492E1291E97E054005DA42A /* FakeAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9492E1281E97E054005DA42A /* FakeAFHTTPSessionManager.m */; };
+		9492E12A1E989622005DA42A /* SimpleOAuth2Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AB001A186E9F00025EF8 /* SimpleOAuth2Utils.m */; };
 		AF1A854219EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1A854119EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m */; };
-		AF1A854319EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1A854119EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m */; };
 		AFBDF4FE19E57F1A001D1061 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBDF4FD19E57F1A001D1061 /* main.m */; };
 		AFBDF50119E57F1A001D1061 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBDF50019E57F1A001D1061 /* AppDelegate.m */; };
 		AFBDF50419E57F1A001D1061 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBDF50319E57F1A001D1061 /* ViewController.m */; };
@@ -17,13 +19,9 @@
 		AFBDF50919E57F1A001D1061 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFBDF50819E57F1A001D1061 /* Images.xcassets */; };
 		AFBDF50C19E57F1A001D1061 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBDF50A19E57F1A001D1061 /* LaunchScreen.xib */; };
 		AFBDF51819E57F1A001D1061 /* SimpleOAuth2AuthenticationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBDF51719E57F1A001D1061 /* SimpleOAuth2AuthenticationManagerTests.m */; };
-		AFC0AB011A186E9F00025EF8 /* SimpleOAuth2Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AB001A186E9F00025EF8 /* SimpleOAuth2Utils.m */; };
-		AFC0AB021A186E9F00025EF8 /* SimpleOAuth2Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AB001A186E9F00025EF8 /* SimpleOAuth2Utils.m */; };
 		AFC0AB041A186FC700025EF8 /* SimpleOAuth2UtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AB031A186FC700025EF8 /* SimpleOAuth2UtilsTests.m */; };
 		AFEB33A019E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFEB339F19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m */; };
-		AFEB33A119E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFEB339F19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m */; };
 		AFFDC23A19EE00D10085FD02 /* NSURLRequest+SimpleOAuth2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFDC23919EE00D10085FD02 /* NSURLRequest+SimpleOAuth2Tests.m */; };
-		F9AB702307A6C836C7BF4E1B /* libPods-SimpleOAuth2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C9E8B21B69C687BC9B3930 /* libPods-SimpleOAuth2Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1BBD828B191642E26F06BE1B /* Pods-SimpleOAuth2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2/Pods-SimpleOAuth2.release.xcconfig"; sourceTree = "<group>"; };
-		4B9A5E211AE967FE74D152DA /* Pods-SimpleOAuth2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2Tests/Pods-SimpleOAuth2Tests.release.xcconfig"; sourceTree = "<group>"; };
-		79CA3FF5793A01A497F364AF /* Pods-SimpleOAuth2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2Tests/Pods-SimpleOAuth2Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		88C9E8B21B69C687BC9B3930 /* libPods-SimpleOAuth2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleOAuth2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB8460C539560826885F959F /* libPods-SimpleOAuth2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleOAuth2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C5A2D6504481B407F2486EB /* Pods-SimpleOAuth2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2Tests/Pods-SimpleOAuth2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		683996FA9E32EFB9667E5EBC /* libPods-SimpleOAuth2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleOAuth2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9492E1271E97E054005DA42A /* FakeAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeAFHTTPSessionManager.h; sourceTree = "<group>"; };
+		9492E1281E97E054005DA42A /* FakeAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeAFHTTPSessionManager.m; sourceTree = "<group>"; };
+		9C3BD81855CE0D420C40A156 /* libPods-SimpleOAuth2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleOAuth2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB79C582716FACB28FB8B09 /* Pods-SimpleOAuth2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2/Pods-SimpleOAuth2.release.xcconfig"; sourceTree = "<group>"; };
+		AD3768E8C91416475206D860 /* Pods-SimpleOAuth2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2/Pods-SimpleOAuth2.debug.xcconfig"; sourceTree = "<group>"; };
 		AF1A854019EC301400F38EB2 /* NSURLRequest+SimpleOAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+SimpleOAuth2.h"; path = "Source/NSURLRequest+SimpleOAuth2.h"; sourceTree = "<group>"; };
 		AF1A854119EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+SimpleOAuth2.m"; path = "Source/NSURLRequest+SimpleOAuth2.m"; sourceTree = "<group>"; };
 		AF39156C19FA946E00F39FD3 /* SimpleOAuth2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SimpleOAuth2.h; path = Source/SimpleOAuth2.h; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		AFEB339E19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleOAuth2AuthenticationManager.h; path = Source/SimpleOAuth2AuthenticationManager.h; sourceTree = "<group>"; };
 		AFEB339F19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleOAuth2AuthenticationManager.m; path = Source/SimpleOAuth2AuthenticationManager.m; sourceTree = "<group>"; };
 		AFFDC23919EE00D10085FD02 /* NSURLRequest+SimpleOAuth2Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+SimpleOAuth2Tests.m"; sourceTree = "<group>"; };
-		D0EDC5CC0FB054AFD2E36A20 /* Pods-SimpleOAuth2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2/Pods-SimpleOAuth2.debug.xcconfig"; sourceTree = "<group>"; };
+		F9E463E4E4773FDA12255B59 /* Pods-SimpleOAuth2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2Tests/Pods-SimpleOAuth2Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CC6CD377451CEB74AAC13BE /* libPods-SimpleOAuth2.a in Frameworks */,
+				8C944708085EF63F90E48BE7 /* libPods-SimpleOAuth2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,22 +81,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9AB702307A6C836C7BF4E1B /* libPods-SimpleOAuth2Tests.a in Frameworks */,
+				02C743BFC04FF382360D01C7 /* libPods-SimpleOAuth2Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AEA66603FA70CF41A204BF4 /* Pods */ = {
+		2685526BF3B584B1E457BC04 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D0EDC5CC0FB054AFD2E36A20 /* Pods-SimpleOAuth2.debug.xcconfig */,
-				1BBD828B191642E26F06BE1B /* Pods-SimpleOAuth2.release.xcconfig */,
-				79CA3FF5793A01A497F364AF /* Pods-SimpleOAuth2Tests.debug.xcconfig */,
-				4B9A5E211AE967FE74D152DA /* Pods-SimpleOAuth2Tests.release.xcconfig */,
+				AD3768E8C91416475206D860 /* Pods-SimpleOAuth2.debug.xcconfig */,
+				AAB79C582716FACB28FB8B09 /* Pods-SimpleOAuth2.release.xcconfig */,
+				0C5A2D6504481B407F2486EB /* Pods-SimpleOAuth2Tests.debug.xcconfig */,
+				F9E463E4E4773FDA12255B59 /* Pods-SimpleOAuth2Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9492E1261E97DFB0005DA42A /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				9492E1271E97E054005DA42A /* FakeAFHTTPSessionManager.h */,
+				9492E1281E97E054005DA42A /* FakeAFHTTPSessionManager.m */,
+			);
+			name = Fakes;
 			sourceTree = "<group>";
 		};
 		AFBDF4EF19E57F1A001D1061 = {
@@ -105,8 +114,8 @@
 				AFBDF4FA19E57F1A001D1061 /* SimpleOAuth2 */,
 				AFBDF51419E57F1A001D1061 /* SimpleOAuth2Tests */,
 				AFBDF4F919E57F1A001D1061 /* Products */,
-				1AEA66603FA70CF41A204BF4 /* Pods */,
-				E26DB43AA42DB95A5535BABF /* Frameworks */,
+				2685526BF3B584B1E457BC04 /* Pods */,
+				D6CA777E47A97DE80A84E5FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +157,7 @@
 		AFBDF51419E57F1A001D1061 /* SimpleOAuth2Tests */ = {
 			isa = PBXGroup;
 			children = (
+				9492E1261E97DFB0005DA42A /* Fakes */,
 				AFBDF51719E57F1A001D1061 /* SimpleOAuth2AuthenticationManagerTests.m */,
 				AFFDC23919EE00D10085FD02 /* NSURLRequest+SimpleOAuth2Tests.m */,
 				AFC0AB031A186FC700025EF8 /* SimpleOAuth2UtilsTests.m */,
@@ -178,11 +188,11 @@
 			name = AppCode;
 			sourceTree = "<group>";
 		};
-		E26DB43AA42DB95A5535BABF /* Frameworks */ = {
+		D6CA777E47A97DE80A84E5FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB8460C539560826885F959F /* libPods-SimpleOAuth2.a */,
-				88C9E8B21B69C687BC9B3930 /* libPods-SimpleOAuth2Tests.a */,
+				9C3BD81855CE0D420C40A156 /* libPods-SimpleOAuth2.a */,
+				683996FA9E32EFB9667E5EBC /* libPods-SimpleOAuth2Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -194,11 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFBDF51B19E57F1A001D1061 /* Build configuration list for PBXNativeTarget "SimpleOAuth2" */;
 			buildPhases = (
-				87ACDE2FC6FC66F8B5E1B90D /* Check Pods Manifest.lock */,
+				8A38522FDBC8C8BACC770EA1 /* [CP] Check Pods Manifest.lock */,
 				AFBDF4F419E57F1A001D1061 /* Sources */,
 				AFBDF4F519E57F1A001D1061 /* Frameworks */,
 				AFBDF4F619E57F1A001D1061 /* Resources */,
-				FC55C391E4A7D542417DD243 /* Copy Pods Resources */,
+				383F5D64701C18C8919723E8 /* [CP] Embed Pods Frameworks */,
+				FD296FC396B75090CAD352A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,11 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFBDF51E19E57F1A001D1061 /* Build configuration list for PBXNativeTarget "SimpleOAuth2Tests" */;
 			buildPhases = (
-				AE40E6A5A384EEC4CAB34363 /* Check Pods Manifest.lock */,
+				D9EC05C008885C30C7CC0AF8 /* [CP] Check Pods Manifest.lock */,
 				AFBDF50D19E57F1A001D1061 /* Sources */,
 				AFBDF50E19E57F1A001D1061 /* Frameworks */,
 				AFBDF50F19E57F1A001D1061 /* Resources */,
-				5CB640924C345701187B33A4 /* Copy Pods Resources */,
+				C57C018ACDC29D605B3CA5A0 /* [CP] Embed Pods Frameworks */,
+				2C7ADE1B51DAC434CCF0D642 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,7 +247,7 @@
 		AFBDF4F019E57F1A001D1061 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = RKB;
 				TargetAttributes = {
 					AFBDF4F719E57F1A001D1061 = {
@@ -287,14 +299,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5CB640924C345701187B33A4 /* Copy Pods Resources */ = {
+		2C7ADE1B51DAC434CCF0D642 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,44 +314,74 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleOAuth2Tests/Pods-SimpleOAuth2Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		87ACDE2FC6FC66F8B5E1B90D /* Check Pods Manifest.lock */ = {
+		383F5D64701C18C8919723E8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleOAuth2/Pods-SimpleOAuth2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE40E6A5A384EEC4CAB34363 /* Check Pods Manifest.lock */ = {
+		8A38522FDBC8C8BACC770EA1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FC55C391E4A7D542417DD243 /* Copy Pods Resources */ = {
+		C57C018ACDC29D605B3CA5A0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleOAuth2Tests/Pods-SimpleOAuth2Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9EC05C008885C30C7CC0AF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD296FC396B75090CAD352A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,7 +400,7 @@
 				AFBDF50119E57F1A001D1061 /* AppDelegate.m in Sources */,
 				AFEB33A019E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m in Sources */,
 				AFBDF4FE19E57F1A001D1061 /* main.m in Sources */,
-				AFC0AB011A186E9F00025EF8 /* SimpleOAuth2Utils.m in Sources */,
+				9492E12A1E989622005DA42A /* SimpleOAuth2Utils.m in Sources */,
 				AF1A854219EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,12 +409,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFEB33A119E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m in Sources */,
+				9492E1291E97E054005DA42A /* FakeAFHTTPSessionManager.m in Sources */,
 				AFBDF51819E57F1A001D1061 /* SimpleOAuth2AuthenticationManagerTests.m in Sources */,
 				AFC0AB041A186FC700025EF8 /* SimpleOAuth2UtilsTests.m in Sources */,
 				AFFDC23A19EE00D10085FD02 /* NSURLRequest+SimpleOAuth2Tests.m in Sources */,
-				AF1A854319EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m in Sources */,
-				AFC0AB021A186E9F00025EF8 /* SimpleOAuth2Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,15 +459,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -440,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -461,8 +505,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -470,13 +516,14 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -486,33 +533,35 @@
 		};
 		AFBDF51C19E57F1A001D1061 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0EDC5CC0FB054AFD2E36A20 /* Pods-SimpleOAuth2.debug.xcconfig */;
+			baseConfigurationReference = AD3768E8C91416475206D860 /* Pods-SimpleOAuth2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SimpleOAuth2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RKB.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		AFBDF51D19E57F1A001D1061 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BBD828B191642E26F06BE1B /* Pods-SimpleOAuth2.release.xcconfig */;
+			baseConfigurationReference = AAB79C582716FACB28FB8B09 /* Pods-SimpleOAuth2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SimpleOAuth2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RKB.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		AFBDF51F19E57F1A001D1061 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79CA3FF5793A01A497F364AF /* Pods-SimpleOAuth2Tests.debug.xcconfig */;
+			baseConfigurationReference = 0C5A2D6504481B407F2486EB /* Pods-SimpleOAuth2Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -525,6 +574,7 @@
 				);
 				INFOPLIST_FILE = SimpleOAuth2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RKB.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleOAuth2.app/SimpleOAuth2";
 			};
@@ -532,7 +582,7 @@
 		};
 		AFBDF52019E57F1A001D1061 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B9A5E211AE967FE74D152DA /* Pods-SimpleOAuth2Tests.release.xcconfig */;
+			baseConfigurationReference = F9E463E4E4773FDA12255B59 /* Pods-SimpleOAuth2Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -541,6 +591,7 @@
 				);
 				INFOPLIST_FILE = SimpleOAuth2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RKB.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleOAuth2.app/SimpleOAuth2";
 			};

@@ -1,4 +1,4 @@
-//Copyright (c) 2017 Ryan Baumbach <github@ryan.codes>
+//Copyright (c) 2016 Ryan Baumbach <rbaumbach.github@gmail.com>
 //
 //Permission is hereby granted, free of charge, to any person obtaining
 //a copy of this software and associated documentation files (the "Software"),
@@ -19,32 +19,15 @@
 //OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 //WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "SimpleOAuth2Utils.h"
+#import "SimpleOAuth2AuthenticationManager.h"
 
 
-NSString *const ScopePermissionsParam = @"&scope=";
+@interface FakeSimpleOAuth2AuthenticationManager : SimpleOAuth2AuthenticationManager
 
-
-@implementation SimpleOAuth2Utils
-
-- (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL
-                              permissionScope:(NSArray *)permissionScope
-{
-    NSMutableString *webLoginURLString = [webLoginURL.absoluteString mutableCopy];
-    
-    if (permissionScope.count > 0) {
-        [webLoginURLString appendString:ScopePermissionsParam];
-        
-        [permissionScope enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-            if (idx != 0) {
-                [webLoginURLString appendString:@"+"];
-            }
-            
-            [webLoginURLString appendString:(NSString *)obj];
-        }];
-    }
-    
-    return [NSURLRequest requestWithURL:[NSURL URLWithString:webLoginURLString]];
-}
+@property (strong, nonatomic) NSURL *authURL;
+@property (strong, nonatomic) NSDictionary *tokenParametersDictionary;
+@property (strong, nonatomic) id<TokenParameters> tokenParameters;
+@property (copy, nonatomic) void (^success)(id authResponseObject);
+@property (copy, nonatomic) void (^failure)(NSError *error);
 
 @end

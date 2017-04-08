@@ -1,7 +1,7 @@
 #import <Specta/Specta.h>
-#define EXP_SHORTHAND
 #import <Expecta/Expecta.h>
 #import <OCMock/OCMock.h>
+
 #import "NSURLRequest+SimpleOAuth2.h"
 
 

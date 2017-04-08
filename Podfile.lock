@@ -1,48 +1,35 @@
 PODS:
-  - AFNetworking (2.4.1):
-    - AFNetworking/NSURLConnection
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-    - AFNetworking/UIKit
-  - AFNetworking/NSURLConnection (2.4.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.4.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.4.1)
-  - AFNetworking/Security (2.4.1)
-  - AFNetworking/Serialization (2.4.1)
-  - AFNetworking/UIKit (2.4.1):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
-  - Expecta (0.2.4)
-  - OCMock (3.0.2)
-  - RealFakes (0.0.3):
-    - AFNetworking (~> 2.0)
-  - Specta (0.3.0.beta1)
+  - Expecta (1.0.5)
+  - OCMock (3.4)
+  - Specta (1.0.6)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.0)
-  - Expecta (~> 0.2.4)
-  - OCMock (~> 3.0.2)
-  - RealFakes
-  - Specta (from `https://github.com/specta/specta.git`, tag `v0.3.0.beta1`)
-
-EXTERNAL SOURCES:
-  Specta:
-    :git: https://github.com/specta/specta.git
-    :tag: v0.3.0.beta1
+  - AFNetworking (~> 3.0)
+  - Expecta (~> 1.0)
+  - OCMock (~> 3.0)
+  - Specta (~> 1.0)
 
 SPEC CHECKSUMS:
-  AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
-  Expecta: 112bcafa2304ee0f3c5e586505f24555a47b25d5
-  OCMock: b9836ab89d8d5e66cbe6333f93857037c310ee62
-  RealFakes: 6988e2819e873ff3b31155d8e067b387f2a810cd
-  Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  OCMock: 35ae71d6a8fcc1b59434d561d1520b9dd4f15765
+  Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
 
-COCOAPODS: 0.34.4
+PODFILE CHECKSUM: 554b3191c292ec321423d4725fab4d3eeb23357a
+
+COCOAPODS: 1.2.0

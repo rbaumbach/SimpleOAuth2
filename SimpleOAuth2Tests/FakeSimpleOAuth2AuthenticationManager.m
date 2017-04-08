@@ -1,4 +1,4 @@
-//Copyright (c) 2017 Ryan Baumbach <github@ryan.codes>
+//Copyright (c) 2016 Ryan Baumbach <rbaumbach.github@gmail.com>
 //
 //Permission is hereby granted, free of charge, to any person obtaining
 //a copy of this software and associated documentation files (the "Software"),
@@ -19,32 +19,31 @@
 //OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 //WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "SimpleOAuth2Utils.h"
+#import "FakeSimpleOAuth2AuthenticationManager.h"
 
 
-NSString *const ScopePermissionsParam = @"&scope=";
+@implementation FakeSimpleOAuth2AuthenticationManager
 
-
-@implementation SimpleOAuth2Utils
-
-- (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL
-                              permissionScope:(NSArray *)permissionScope
+- (void)authenticateOAuthClient:(NSURL *)authURL
+      tokenParametersDictionary:(NSDictionary *)tokenParameters
+                        success:(void (^)(id authResponseObject))success
+                        failure:(void (^)(NSError *error))failure
 {
-    NSMutableString *webLoginURLString = [webLoginURL.absoluteString mutableCopy];
-    
-    if (permissionScope.count > 0) {
-        [webLoginURLString appendString:ScopePermissionsParam];
-        
-        [permissionScope enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-            if (idx != 0) {
-                [webLoginURLString appendString:@"+"];
-            }
-            
-            [webLoginURLString appendString:(NSString *)obj];
-        }];
-    }
-    
-    return [NSURLRequest requestWithURL:[NSURL URLWithString:webLoginURLString]];
+    self.authURL = authURL;
+    self.tokenParametersDictionary = tokenParameters;
+    self.success = success;
+    self.failure = failure;
+}
+
+- (void)authenticateOAuthClient:(NSURL *)authURL
+                tokenParameters:(id<TokenParameters>)tokenParameters
+                        success:(void (^)(id authResponseObject))success
+                        failure:(void (^)(NSError *error))failure
+{
+    self.authURL = authURL;
+    self.tokenParameters = tokenParameters;
+    self.success = success;
+    self.failure = failure;
 }
 
 @end
