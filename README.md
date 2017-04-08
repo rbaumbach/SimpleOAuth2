@@ -26,7 +26,7 @@ A simple OAuth2 helper
 
 * Prerequisites: [ruby](https://github.com/sstephenson/rbenv), [ruby gems](https://rubygems.org/pages/download), [bundler](http://bundler.io)
 
-This project has been setup to use [fastlane](https://fastlane.tools) to run the tests.
+This project has been setup to use [fastlane](https://fastlane.tools) to run the specs.
 
 First, run the setup.sh script to bundle required gems and Cocoapods when in the project directory:
 
@@ -34,7 +34,7 @@ First, run the setup.sh script to bundle required gems and Cocoapods when in the
 $ ./setup.sh
 ```
 
-And then use fastlane to run all (Debug and Release) the tests on the command line:
+And then use fastlane to run all the specs on the command line:
 
 ```bash
 $ bundle exec fastlane specs
