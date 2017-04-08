@@ -17,7 +17,6 @@
 		AFBDF50419E57F1A001D1061 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBDF50319E57F1A001D1061 /* ViewController.m */; };
 		AFBDF50719E57F1A001D1061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFBDF50519E57F1A001D1061 /* Main.storyboard */; };
 		AFBDF50919E57F1A001D1061 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFBDF50819E57F1A001D1061 /* Images.xcassets */; };
-		AFBDF50C19E57F1A001D1061 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBDF50A19E57F1A001D1061 /* LaunchScreen.xib */; };
 		AFBDF51819E57F1A001D1061 /* SimpleOAuth2AuthenticationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBDF51719E57F1A001D1061 /* SimpleOAuth2AuthenticationManagerTests.m */; };
 		AFC0AB041A186FC700025EF8 /* SimpleOAuth2UtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AB031A186FC700025EF8 /* SimpleOAuth2UtilsTests.m */; };
 		AFEB33A019E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFEB339F19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m */; };
@@ -55,7 +54,6 @@
 		AFBDF50319E57F1A001D1061 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AFBDF50619E57F1A001D1061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFBDF50819E57F1A001D1061 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AFBDF50B19E57F1A001D1061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AFBDF51119E57F1A001D1061 /* SimpleOAuth2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleOAuth2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBDF51619E57F1A001D1061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFBDF51719E57F1A001D1061 /* SimpleOAuth2AuthenticationManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleOAuth2AuthenticationManagerTests.m; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 				AFBDF50319E57F1A001D1061 /* ViewController.m */,
 				AFBDF50519E57F1A001D1061 /* Main.storyboard */,
 				AFBDF50819E57F1A001D1061 /* Images.xcassets */,
-				AFBDF50A19E57F1A001D1061 /* LaunchScreen.xib */,
 			);
 			name = AppCode;
 			sourceTree = "<group>";
@@ -260,6 +257,7 @@
 				TargetAttributes = {
 					AFBDF4F719E57F1A001D1061 = {
 						CreatedOnToolsVersion = 6.0.1;
+						ProvisioningStyle = Manual;
 					};
 					AFBDF51019E57F1A001D1061 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -292,7 +290,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFBDF50719E57F1A001D1061 /* Main.storyboard in Resources */,
-				AFBDF50C19E57F1A001D1061 /* LaunchScreen.xib in Resources */,
 				AFBDF50919E57F1A001D1061 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,14 +440,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		AFBDF50A19E57F1A001D1061 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AFBDF50B19E57F1A001D1061 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -545,12 +534,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SimpleOAuth2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "RKB.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -560,12 +551,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SimpleOAuth2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "RKB.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -613,7 +606,7 @@
 				AFBDF51A19E57F1A001D1061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		AFBDF51B19E57F1A001D1061 /* Build configuration list for PBXNativeTarget "SimpleOAuth2" */ = {
 			isa = XCConfigurationList;
@@ -622,7 +615,7 @@
 				AFBDF51D19E57F1A001D1061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		AFBDF51E19E57F1A001D1061 /* Build configuration list for PBXNativeTarget "SimpleOAuth2Tests" */ = {
 			isa = XCConfigurationList;
@@ -631,7 +624,7 @@
 				AFBDF52019E57F1A001D1061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
