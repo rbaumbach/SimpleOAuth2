@@ -108,6 +108,21 @@
 			name = Fakes;
 			sourceTree = "<group>";
 		};
+		94E9CD211E989DD400C1E155 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AF39156C19FA946E00F39FD3 /* SimpleOAuth2.h */,
+				AF728AEE1A0EB23B00E5EA26 /* TokenParameters.h */,
+				AFEB339E19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.h */,
+				AFEB339F19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m */,
+				AF1A854019EC301400F38EB2 /* NSURLRequest+SimpleOAuth2.h */,
+				AF1A854119EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m */,
+				AFC0AAFF1A186E9F00025EF8 /* SimpleOAuth2Utils.h */,
+				AFC0AB001A186E9F00025EF8 /* SimpleOAuth2Utils.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
 		AFBDF4EF19E57F1A001D1061 = {
 			isa = PBXGroup;
 			children = (
@@ -131,14 +146,7 @@
 		AFBDF4FA19E57F1A001D1061 /* SimpleOAuth2 */ = {
 			isa = PBXGroup;
 			children = (
-				AF39156C19FA946E00F39FD3 /* SimpleOAuth2.h */,
-				AF728AEE1A0EB23B00E5EA26 /* TokenParameters.h */,
-				AFEB339E19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.h */,
-				AFEB339F19E651180058A4B5 /* SimpleOAuth2AuthenticationManager.m */,
-				AF1A854019EC301400F38EB2 /* NSURLRequest+SimpleOAuth2.h */,
-				AF1A854119EC304B00F38EB2 /* NSURLRequest+SimpleOAuth2.m */,
-				AFC0AAFF1A186E9F00025EF8 /* SimpleOAuth2Utils.h */,
-				AFC0AB001A186E9F00025EF8 /* SimpleOAuth2Utils.m */,
+				94E9CD211E989DD400C1E155 /* Source */,
 				AFBDF52119E58138001D1061 /* AppCode */,
 				AFBDF4FB19E57F1A001D1061 /* Supporting Files */,
 			);
