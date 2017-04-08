@@ -11,7 +11,8 @@ platform :ios do
     scan(scheme: "SimpleOAuth2",
          clean: true,
          configuration: "Debug",
-         output_style: "rspec")
+         output_style: "rspec",
+         code_coverage: true)
   end
 
   after_all do |lane|
