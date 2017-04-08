@@ -1,4 +1,4 @@
-# SimpleOAuth2 [![Build Status](https://travis-ci.org/rbaumbach/SimpleOAuth2.svg?branch=master)](https://travis-ci.org/rbaumbach/SimpleOAuth2) [![Cocoapod Version](http://img.shields.io/badge/pod-v0.0.3-blue.svg)](http://cocoapods.org/?q=SimpleOAuth2) [![Cocoapod Platform](http://img.shields.io/badge/platform-iOS-blue.svg)](http://cocoapods.org/?q=SimpleOAuth2) [![License](http://b.repl.ca/v1/License-MIT-blue.png)](https://github.com/rbaumbach/SimpleOAuth2/blob/master/MIT-LICENSE.txt)
+# SimpleOAuth2 [![Build Status](https://travis-ci.org/rbaumbach/SimpleOAuth2.svg?branch=master)](https://travis-ci.org/rbaumbach/SimpleOAuth2) [![Cocoapod Version](http://img.shields.io/badge/pod-v0.0.3-blue.svg)](http://cocoapods.org/?q=SimpleOAuth2) [![Cocoapod Platform](http://img.shields.io/badge/platform-iOS-blue.svg)](http://cocoapods.org/?q=SimpleOAuth2) [![License](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/rbaumbach/SimpleOAuth2/blob/master/MIT-LICENSE.txt)
 
 A simple OAuth2 helper
 
@@ -46,4 +46,4 @@ Version history can be found at the [SimpleOAuth2 wiki](https://github.com/rbaum
 
 ## Suggestions, requests, and feedback
 
-Thanks for checking out SimpleOAuth2 for your OAuth2 needs.  Any feedback can be can be sent to: rbaumbach.github@gmail.com.
+Thanks for checking out SimpleOAuth2 for your OAuth2 needs.  Any feedback can be can be sent to: <github@ryan.codes>.
