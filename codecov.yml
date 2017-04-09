@@ -26,5 +26,6 @@ comment:
   require_changes: no
 
 ignore:
-  - AppDelegate.m
-  - main.m
+  - SimpleOAuth2/AppDelegate.m
+  - SimpleOAuth2/main.m
+  - SimpleOAuth2/ViewController.m
