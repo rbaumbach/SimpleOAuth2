@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AFBDF4F719E57F1A001D1061"
-               BuildableName = "SimpleOAuth2.app"
+               BlueprintIdentifier = "9487085E1E9A858800821D65"
+               BuildableName = "SimpleOAuth2.framework"
                BlueprintName = "SimpleOAuth2"
-               ReferencedContainer = "container:SimpleOAuth2.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AFBDF51019E57F1A001D1061"
-               BuildableName = "SimpleOAuth2Tests.xctest"
-               BlueprintName = "SimpleOAuth2Tests"
                ReferencedContainer = "container:SimpleOAuth2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AFBDF51019E57F1A001D1061"
-               BuildableName = "SimpleOAuth2Tests.xctest"
-               BlueprintName = "SimpleOAuth2Tests"
+               BlueprintIdentifier = "946A74731E9A8C0300889E4F"
+               BuildableName = "SimpleOAuth2Specs.xctest"
+               BlueprintName = "SimpleOAuth2Specs"
                ReferencedContainer = "container:SimpleOAuth2.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,8 +42,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AFBDF4F719E57F1A001D1061"
-            BuildableName = "SimpleOAuth2.app"
+            BlueprintIdentifier = "9487085E1E9A858800821D65"
+            BuildableName = "SimpleOAuth2.framework"
             BlueprintName = "SimpleOAuth2"
             ReferencedContainer = "container:SimpleOAuth2.xcodeproj">
          </BuildableReference>
@@ -75,16 +61,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AFBDF4F719E57F1A001D1061"
-            BuildableName = "SimpleOAuth2.app"
+            BlueprintIdentifier = "9487085E1E9A858800821D65"
+            BuildableName = "SimpleOAuth2.framework"
             BlueprintName = "SimpleOAuth2"
             ReferencedContainer = "container:SimpleOAuth2.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -94,16 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AFBDF4F719E57F1A001D1061"
-            BuildableName = "SimpleOAuth2.app"
+            BlueprintIdentifier = "9487085E1E9A858800821D65"
+            BuildableName = "SimpleOAuth2.framework"
             BlueprintName = "SimpleOAuth2"
             ReferencedContainer = "container:SimpleOAuth2.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

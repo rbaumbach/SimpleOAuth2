@@ -21,9 +21,7 @@
 
 #import "SimpleOAuth2Utils.h"
 
-
 NSString *const ScopePermissionsParam = @"&scope=";
-
 
 @implementation SimpleOAuth2Utils
 

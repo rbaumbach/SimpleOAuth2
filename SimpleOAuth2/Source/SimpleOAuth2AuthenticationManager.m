@@ -22,7 +22,6 @@
 #import <AFNetworking/AFNetworking.h>
 #import "SimpleOAuth2AuthenticationManager.h"
 
-
 @interface SimpleOAuth2AuthenticationManager ()
 
 @property (strong, nonatomic) AFHTTPSessionManager *sessionManager;

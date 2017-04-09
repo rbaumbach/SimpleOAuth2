@@ -1,6 +1,5 @@
 #import "FakeAFHTTPSessionManager.h"
 
-
 @implementation FakeAFHTTPSessionManager
 
 #pragma mark - AFHTTPSessionManager

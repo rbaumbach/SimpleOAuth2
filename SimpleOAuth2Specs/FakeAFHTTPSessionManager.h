@@ -1,6 +1,5 @@
 #import <AFNetworking/AFNetworking.h>
 
-
 @interface FakeAFHTTPSessionManager : AFHTTPSessionManager
 
 @property (strong, nonatomic) NSURLSessionConfiguration *urlSessionConfiguration;

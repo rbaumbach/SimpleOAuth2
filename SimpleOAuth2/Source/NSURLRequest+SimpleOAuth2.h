@@ -21,7 +21,6 @@
 
 @import Foundation;
 
-
 @interface NSURLRequest (SimpleOAuth2)
 
 - (NSString *)oAuth2AuthorizationCode;

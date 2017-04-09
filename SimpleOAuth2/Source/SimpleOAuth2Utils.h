@@ -21,7 +21,6 @@
 
 @import Foundation;
 
-
 @interface SimpleOAuth2Utils : NSObject
 
 - (NSURLRequest *)buildWebLoginRequestWithURL:(NSURL *)webLoginURL

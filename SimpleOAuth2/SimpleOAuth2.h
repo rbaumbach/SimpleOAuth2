@@ -19,6 +19,16 @@
 //OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 //WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "SimpleOAuth2AuthenticationManager.h"
-#import "NSURLRequest+SimpleOAuth2.h"
-#import "TokenParameters.h"
+#import <Foundation/Foundation.h>
+
+//! Project version number for SimpleOAuth2.
+FOUNDATION_EXPORT double SimpleOAuth2VersionNumber;
+
+//! Project version string for SimpleOAuth2.
+FOUNDATION_EXPORT const unsigned char SimpleOAuth2VersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <SimpleOAuth2/PublicHeader.h>
+
+#import <SimpleOAuth2/SimpleOAuth2AuthenticationManager.h>
+#import <SimpleOAuth2/NSURLRequest+SimpleOAuth2.h>
+#import <SimpleOAuth2/TokenParameters.h>
