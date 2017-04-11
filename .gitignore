@@ -17,6 +17,9 @@ DerivedData
 .idea/
 Pods/
 
+# Carthage
+Carthage
+
 # Fastlane
 fastlane/report.xml
 fastlane/.env*private*
