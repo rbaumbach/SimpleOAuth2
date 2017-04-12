@@ -29,3 +29,4 @@ ignore:
   - SimpleOAuth2/AppDelegate.m
   - SimpleOAuth2/main.m
   - SimpleOAuth2/ViewController.m
+  - SimpleOAuth2Specs
