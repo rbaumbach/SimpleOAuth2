@@ -19,6 +19,7 @@ Pods/
 
 # Carthage
 Carthage
+SimpleOAuth2.framework.zip
 
 # Fastlane
 fastlane/report.xml
