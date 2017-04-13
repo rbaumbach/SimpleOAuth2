@@ -10,13 +10,13 @@
 		821CAE75C815A030EBC30AC0 /* libPods-SimpleOAuth2Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF6270A97432CEFA3B3540E /* libPods-SimpleOAuth2Specs.a */; };
 		946A74791E9A8C0400889E4F /* SimpleOAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9487085F1E9A858800821D65 /* SimpleOAuth2.framework */; };
 		948708631E9A858800821D65 /* SimpleOAuth2.h in Headers */ = {isa = PBXBuildFile; fileRef = 948708611E9A858800821D65 /* SimpleOAuth2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		948708701E9A880000821D65 /* NSURLRequest+SimpleOAuth2.h in Headers */ = {isa = PBXBuildFile; fileRef = 948708681E9A880000821D65 /* NSURLRequest+SimpleOAuth2.h */; };
+		948708701E9A880000821D65 /* NSURLRequest+SimpleOAuth2.h in Headers */ = {isa = PBXBuildFile; fileRef = 948708681E9A880000821D65 /* NSURLRequest+SimpleOAuth2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		948708711E9A880000821D65 /* NSURLRequest+SimpleOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 948708691E9A880000821D65 /* NSURLRequest+SimpleOAuth2.m */; };
-		948708731E9A880000821D65 /* SimpleOAuth2AuthenticationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9487086B1E9A880000821D65 /* SimpleOAuth2AuthenticationManager.h */; };
+		948708731E9A880000821D65 /* SimpleOAuth2AuthenticationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9487086B1E9A880000821D65 /* SimpleOAuth2AuthenticationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		948708741E9A880000821D65 /* SimpleOAuth2AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9487086C1E9A880000821D65 /* SimpleOAuth2AuthenticationManager.m */; };
 		948708751E9A880000821D65 /* SimpleOAuth2Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9487086D1E9A880000821D65 /* SimpleOAuth2Utils.h */; };
 		948708761E9A880000821D65 /* SimpleOAuth2Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9487086E1E9A880000821D65 /* SimpleOAuth2Utils.m */; };
-		948708771E9A880000821D65 /* TokenParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 9487086F1E9A880000821D65 /* TokenParameters.h */; };
+		948708771E9A880000821D65 /* TokenParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 9487086F1E9A880000821D65 /* TokenParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94A8B2CE1E9A8CDA00852392 /* FakeAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2CD1E9A8CDA00852392 /* FakeAFHTTPSessionManager.m */; };
 		94A8B2D01E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2CF1E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m */; };
 		94A8B2D31E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2D11E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m */; };
@@ -37,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		0BF6270A97432CEFA3B3540E /* libPods-SimpleOAuth2Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleOAuth2Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C5A2D6504481B407F2486EB /* Pods-SimpleOAuth2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2Tests/Pods-SimpleOAuth2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B39D2B1D02B0513A7C127AA /* Pods-SimpleOAuth2Specs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2Specs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2Specs/Pods-SimpleOAuth2Specs.debug.xcconfig"; sourceTree = "<group>"; };
 		946A74741E9A8C0300889E4F /* SimpleOAuth2Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleOAuth2Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		946A74781E9A8C0400889E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +58,6 @@
 		94A8B2D81E9C76C300852392 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 		AD3768E8C91416475206D860 /* Pods-SimpleOAuth2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2/Pods-SimpleOAuth2.debug.xcconfig"; sourceTree = "<group>"; };
 		D1E1E7934942BFF83FBAB1DC /* Pods-SimpleOAuth2Specs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2Specs.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2Specs/Pods-SimpleOAuth2Specs.release.xcconfig"; sourceTree = "<group>"; };
-		F9E463E4E4773FDA12255B59 /* Pods-SimpleOAuth2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2Tests/Pods-SimpleOAuth2Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				AD3768E8C91416475206D860 /* Pods-SimpleOAuth2.debug.xcconfig */,
-				0C5A2D6504481B407F2486EB /* Pods-SimpleOAuth2Tests.debug.xcconfig */,
-				F9E463E4E4773FDA12255B59 /* Pods-SimpleOAuth2Tests.release.xcconfig */,
 				1B39D2B1D02B0513A7C127AA /* Pods-SimpleOAuth2Specs.debug.xcconfig */,
 				D1E1E7934942BFF83FBAB1DC /* Pods-SimpleOAuth2Specs.release.xcconfig */,
 			);
@@ -193,8 +189,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				948708771E9A880000821D65 /* TokenParameters.h in Headers */,
 				948708701E9A880000821D65 /* NSURLRequest+SimpleOAuth2.h in Headers */,
+				948708771E9A880000821D65 /* TokenParameters.h in Headers */,
 				948708731E9A880000821D65 /* SimpleOAuth2AuthenticationManager.h in Headers */,
 				948708631E9A858800821D65 /* SimpleOAuth2.h in Headers */,
 				948708751E9A880000821D65 /* SimpleOAuth2Utils.h in Headers */,
