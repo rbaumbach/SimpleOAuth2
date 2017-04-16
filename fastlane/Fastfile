@@ -6,7 +6,7 @@ platform :ios do
     puts "Doin' some fastlane..."
   end
 
-  desc "Runs all the tests (debug and release)"
+  desc "Runs all the specs"
   lane :specs do
     scan(scheme: "SimpleOAuth2",
          clean: true,

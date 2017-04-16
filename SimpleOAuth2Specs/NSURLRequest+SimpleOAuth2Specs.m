@@ -1,6 +1,5 @@
 #import <Specta/Specta.h>
 #import <Expecta/Expecta.h>
-#import <OCMock/OCMock.h>
 
 #import "NSURLRequest+SimpleOAuth2.h"
 
