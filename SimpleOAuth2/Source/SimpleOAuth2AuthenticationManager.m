@@ -20,7 +20,7 @@
 //WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import <AFNetworking/AFNetworking.h>
-#import "SimpleOAuth2AuthenticationManager.h"
+#import <SimpleOAuth2/SimpleOAuth2AuthenticationManager.h>
 
 @interface SimpleOAuth2AuthenticationManager ()
 

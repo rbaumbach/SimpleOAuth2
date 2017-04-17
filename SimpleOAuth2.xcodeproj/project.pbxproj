@@ -230,7 +230,6 @@
 				9487085B1E9A858800821D65 /* Frameworks */,
 				9487085C1E9A858800821D65 /* Headers */,
 				9487085D1E9A858800821D65 /* Resources */,
-				94A8B2DA1E9C77C900852392 /* Carthage Run Script */,
 			);
 			buildRules = (
 			);
@@ -327,21 +326,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleOAuth2Specs/Pods-SimpleOAuth2Specs-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		94A8B2DA1E9C77C900852392 /* Carthage Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
-			);
-			name = "Carthage Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 		94E673781E9C88C700EC2A45 /* Carthage Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,6 +333,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SimpleOAuth2.framework",
 			);
 			name = "Carthage Run Script";
 			outputPaths = (

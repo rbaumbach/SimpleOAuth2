@@ -20,6 +20,7 @@
 //WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 @import Foundation;
+
 #import "TokenParameters.h"
 
 @class AFHTTPResponseSerializer;
