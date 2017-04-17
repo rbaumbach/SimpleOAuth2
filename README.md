@@ -47,7 +47,7 @@ $ bundle exec fastlane specs
 
 ## Version History
 
-Version history can be found at the [SimpleOAuth2 wiki](https://github.com/rbaumbach/SimpleOAuth2/wiki/Version-History).
+Version history can be found [on releases page](https://github.com/rbaumbach/SimpleOAuth2/releases).
 
 ## Suggestions, requests, and feedback
 
