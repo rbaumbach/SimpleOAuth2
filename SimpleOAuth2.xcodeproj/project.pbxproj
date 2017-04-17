@@ -56,7 +56,6 @@
 		94A8B2D11E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+SimpleOAuth2Specs.m"; sourceTree = "<group>"; };
 		94A8B2D21E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleOAuth2AuthenticationManagerSpecs.m; sourceTree = "<group>"; };
 		94A8B2D81E9C76C300852392 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
-		AD3768E8C91416475206D860 /* Pods-SimpleOAuth2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2/Pods-SimpleOAuth2.debug.xcconfig"; sourceTree = "<group>"; };
 		D1E1E7934942BFF83FBAB1DC /* Pods-SimpleOAuth2Specs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2Specs.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2Specs/Pods-SimpleOAuth2Specs.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +84,6 @@
 		2685526BF3B584B1E457BC04 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AD3768E8C91416475206D860 /* Pods-SimpleOAuth2.debug.xcconfig */,
 				1B39D2B1D02B0513A7C127AA /* Pods-SimpleOAuth2Specs.debug.xcconfig */,
 				D1E1E7934942BFF83FBAB1DC /* Pods-SimpleOAuth2Specs.release.xcconfig */,
 			);
