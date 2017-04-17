@@ -12,6 +12,11 @@ A simple OAuth2 helper
 2.  Install the pod(s) by running `pod install`.
 3.  Add SimpleOAuth2 to your files with `#import <SimpleOAuth2/SimpleOAuth2.h>`.
 
+### Carthage
+
+1. Add `github "rbaumbach/SimpleOAuth2"` to your Cartfile.
+2. [Follow the directions](https://github.com/Carthage/Carthage#getting-started) to add the dynamic framework to your target.
+
 ### Clone from Github
 
 1.  Clone repository from github and copy files directly, or add it as a git submodule.
