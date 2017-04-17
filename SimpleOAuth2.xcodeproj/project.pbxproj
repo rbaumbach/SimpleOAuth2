@@ -17,6 +17,9 @@
 		948708751E9A880000821D65 /* SimpleOAuth2Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9487086D1E9A880000821D65 /* SimpleOAuth2Utils.h */; };
 		948708761E9A880000821D65 /* SimpleOAuth2Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9487086E1E9A880000821D65 /* SimpleOAuth2Utils.m */; };
 		948708771E9A880000821D65 /* TokenParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 9487086F1E9A880000821D65 /* TokenParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		948B9CE21EA45EE300E9684E /* SimpleOAuth2.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 9487085F1E9A858800821D65 /* SimpleOAuth2.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		948B9CE31EA45EEA00E9684E /* AFNetworking.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 94A8B2D81E9C76C300852392 /* AFNetworking.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		948B9CE41EA45EEA00E9684E /* libPods-SimpleOAuth2Specs.a in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 0BF6270A97432CEFA3B3540E /* libPods-SimpleOAuth2Specs.a */; };
 		94A8B2CE1E9A8CDA00852392 /* FakeAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2CD1E9A8CDA00852392 /* FakeAFHTTPSessionManager.m */; };
 		94A8B2D01E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2CF1E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m */; };
 		94A8B2D31E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2D11E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m */; };
@@ -34,6 +37,22 @@
 			remoteInfo = SimpleOAuth2;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		948B9CE11EA45EC700E9684E /* Carthage Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				948B9CE31EA45EEA00E9684E /* AFNetworking.framework in Carthage Copy Files */,
+				948B9CE41EA45EEA00E9684E /* libPods-SimpleOAuth2Specs.a in Carthage Copy Files */,
+				948B9CE21EA45EE300E9684E /* SimpleOAuth2.framework in Carthage Copy Files */,
+			);
+			name = "Carthage Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0BF6270A97432CEFA3B3540E /* libPods-SimpleOAuth2Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleOAuth2Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,7 +227,7 @@
 				946A74721E9A8C0300889E4F /* Resources */,
 				79D21E34A42984C68A0561A6 /* [CP] Embed Pods Frameworks */,
 				E9FC9CDC54D1E72A9DEBB52A /* [CP] Copy Pods Resources */,
-				94E673781E9C88C700EC2A45 /* Carthage Run Script */,
+				948B9CE11EA45EC700E9684E /* Carthage Copy Files */,
 			);
 			buildRules = (
 			);
@@ -323,22 +342,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleOAuth2Specs/Pods-SimpleOAuth2Specs-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		94E673781E9C88C700EC2A45 /* Carthage Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SimpleOAuth2.framework",
-			);
-			name = "Carthage Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		E9FC9CDC54D1E72A9DEBB52A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
