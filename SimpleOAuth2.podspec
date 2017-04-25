@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.public_header_files   = 'SimpleOAuth2/Source/SimpleOAuth2.h', 'SimpleOAuth2/Source/SimpleOAuth2AuthenticationManager.h',
                             'SimpleOAuth2/Source/NSURLRequest+SimpleOAuth2.h', 'SimpleOAuth2/Source/TokenParameters.h'
   s.source_files          = 'SimpleOAuth2/Source/*.{h,m}'
-  s.frameworks            = 'Foundation'
 
   s.dependency 'AFNetworking', '>= 3.0.0'
 end

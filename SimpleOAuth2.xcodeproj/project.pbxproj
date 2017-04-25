@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		821CAE75C815A030EBC30AC0 /* libPods-SimpleOAuth2Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF6270A97432CEFA3B3540E /* libPods-SimpleOAuth2Specs.a */; };
 		946A74791E9A8C0400889E4F /* SimpleOAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9487085F1E9A858800821D65 /* SimpleOAuth2.framework */; };
-		948708631E9A858800821D65 /* SimpleOAuth2.h in Headers */ = {isa = PBXBuildFile; fileRef = 948708611E9A858800821D65 /* SimpleOAuth2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		948708701E9A880000821D65 /* NSURLRequest+SimpleOAuth2.h in Headers */ = {isa = PBXBuildFile; fileRef = 948708681E9A880000821D65 /* NSURLRequest+SimpleOAuth2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		948708711E9A880000821D65 /* NSURLRequest+SimpleOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 948708691E9A880000821D65 /* NSURLRequest+SimpleOAuth2.m */; };
 		948708731E9A880000821D65 /* SimpleOAuth2AuthenticationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9487086B1E9A880000821D65 /* SimpleOAuth2AuthenticationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +25,7 @@
 		94A8B2D41E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2D21E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m */; };
 		94A8B2D91E9C76C300852392 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A8B2D81E9C76C300852392 /* AFNetworking.framework */; };
 		94A8B2DB1E9C784D00852392 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A8B2D81E9C76C300852392 /* AFNetworking.framework */; };
+		94B59C611EAE52290080990F /* SimpleOAuth2.h in Headers */ = {isa = PBXBuildFile; fileRef = 94B59C601EAE52290080990F /* SimpleOAuth2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,6 @@
 		946A74741E9A8C0300889E4F /* SimpleOAuth2Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleOAuth2Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		946A74781E9A8C0400889E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9487085F1E9A858800821D65 /* SimpleOAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleOAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		948708611E9A858800821D65 /* SimpleOAuth2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleOAuth2.h; sourceTree = "<group>"; };
 		948708621E9A858800821D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		948708681E9A880000821D65 /* NSURLRequest+SimpleOAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+SimpleOAuth2.h"; path = "Source/NSURLRequest+SimpleOAuth2.h"; sourceTree = "<group>"; };
 		948708691E9A880000821D65 /* NSURLRequest+SimpleOAuth2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+SimpleOAuth2.m"; path = "Source/NSURLRequest+SimpleOAuth2.m"; sourceTree = "<group>"; };
@@ -75,6 +74,7 @@
 		94A8B2D11E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+SimpleOAuth2Specs.m"; sourceTree = "<group>"; };
 		94A8B2D21E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleOAuth2AuthenticationManagerSpecs.m; sourceTree = "<group>"; };
 		94A8B2D81E9C76C300852392 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		94B59C601EAE52290080990F /* SimpleOAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleOAuth2.h; path = Source/SimpleOAuth2.h; sourceTree = "<group>"; };
 		D1E1E7934942BFF83FBAB1DC /* Pods-SimpleOAuth2Specs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2Specs.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2Specs/Pods-SimpleOAuth2Specs.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,7 +133,7 @@
 		948708671E9A87F600821D65 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				948708611E9A858800821D65 /* SimpleOAuth2.h */,
+				94B59C601EAE52290080990F /* SimpleOAuth2.h */,
 				948708681E9A880000821D65 /* NSURLRequest+SimpleOAuth2.h */,
 				948708691E9A880000821D65 /* NSURLRequest+SimpleOAuth2.m */,
 				9487086B1E9A880000821D65 /* SimpleOAuth2AuthenticationManager.h */,
@@ -206,10 +206,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94B59C611EAE52290080990F /* SimpleOAuth2.h in Headers */,
 				948708701E9A880000821D65 /* NSURLRequest+SimpleOAuth2.h in Headers */,
 				948708771E9A880000821D65 /* TokenParameters.h in Headers */,
 				948708731E9A880000821D65 /* SimpleOAuth2AuthenticationManager.h in Headers */,
-				948708631E9A858800821D65 /* SimpleOAuth2.h in Headers */,
 				948708751E9A880000821D65 /* SimpleOAuth2Utils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
