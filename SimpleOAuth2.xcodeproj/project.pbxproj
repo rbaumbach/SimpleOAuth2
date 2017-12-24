@@ -16,8 +16,8 @@
 		948708751E9A880000821D65 /* SimpleOAuth2Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9487086D1E9A880000821D65 /* SimpleOAuth2Utils.h */; };
 		948708761E9A880000821D65 /* SimpleOAuth2Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9487086E1E9A880000821D65 /* SimpleOAuth2Utils.m */; };
 		948708771E9A880000821D65 /* TokenParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 9487086F1E9A880000821D65 /* TokenParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		948B9CE21EA45EE300E9684E /* SimpleOAuth2.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 9487085F1E9A858800821D65 /* SimpleOAuth2.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		948B9CE31EA45EEA00E9684E /* AFNetworking.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 94A8B2D81E9C76C300852392 /* AFNetworking.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		948B9CE21EA45EE300E9684E /* SimpleOAuth2.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 9487085F1E9A858800821D65 /* SimpleOAuth2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		948B9CE31EA45EEA00E9684E /* AFNetworking.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 94A8B2D81E9C76C300852392 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		948B9CE41EA45EEA00E9684E /* libPods-SimpleOAuth2Specs.a in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 0BF6270A97432CEFA3B3540E /* libPods-SimpleOAuth2Specs.a */; };
 		94A8B2CE1E9A8CDA00852392 /* FakeAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2CD1E9A8CDA00852392 /* FakeAFHTTPSessionManager.m */; };
 		94A8B2D01E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2CF1E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m */; };
@@ -263,7 +263,7 @@
 		AFBDF4F019E57F1A001D1061 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = RKB;
 				TargetAttributes = {
 					946A74731E9A8C0300889E4F = {
@@ -401,14 +401,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -499,14 +505,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
