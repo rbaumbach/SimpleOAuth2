@@ -13,7 +13,7 @@
 		948708711E9A880000821D65 /* NSURLRequest+SimpleOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 948708691E9A880000821D65 /* NSURLRequest+SimpleOAuth2.m */; };
 		948708731E9A880000821D65 /* SimpleOAuth2AuthenticationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9487086B1E9A880000821D65 /* SimpleOAuth2AuthenticationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		948708741E9A880000821D65 /* SimpleOAuth2AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9487086C1E9A880000821D65 /* SimpleOAuth2AuthenticationManager.m */; };
-		948708751E9A880000821D65 /* SimpleOAuth2Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9487086D1E9A880000821D65 /* SimpleOAuth2Utils.h */; };
+		948708751E9A880000821D65 /* SimpleOAuth2Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9487086D1E9A880000821D65 /* SimpleOAuth2Utils.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		948708761E9A880000821D65 /* SimpleOAuth2Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9487086E1E9A880000821D65 /* SimpleOAuth2Utils.m */; };
 		948708771E9A880000821D65 /* TokenParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 9487086F1E9A880000821D65 /* TokenParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		948B9CE21EA45EE300E9684E /* SimpleOAuth2.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 9487085F1E9A858800821D65 /* SimpleOAuth2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
