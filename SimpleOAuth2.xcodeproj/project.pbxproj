@@ -16,11 +16,11 @@
 		9424978820C42CB3002B6363 /* SimpleOAuth2AuthenticationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9424978020C42CB3002B6363 /* SimpleOAuth2AuthenticationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9424978920C42CB3002B6363 /* SimpleOAuth2Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9424978120C42CB3002B6363 /* SimpleOAuth2Utils.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9424978A20C42CB3002B6363 /* TokenParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 9424978220C42CB3002B6363 /* TokenParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9424979520C42DFA002B6363 /* FakeAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9424979320C42DFA002B6363 /* FakeAFHTTPSessionManager.m */; };
 		946A74791E9A8C0400889E4F /* SimpleOAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9487085F1E9A858800821D65 /* SimpleOAuth2.framework */; };
 		948B9CE21EA45EE300E9684E /* SimpleOAuth2.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 9487085F1E9A858800821D65 /* SimpleOAuth2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		948B9CE31EA45EEA00E9684E /* AFNetworking.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 94A8B2D81E9C76C300852392 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		948B9CE41EA45EEA00E9684E /* libPods-SimpleOAuth2Specs.a in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 0BF6270A97432CEFA3B3540E /* libPods-SimpleOAuth2Specs.a */; };
-		94A8B2CE1E9A8CDA00852392 /* FakeAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2CD1E9A8CDA00852392 /* FakeAFHTTPSessionManager.m */; };
 		94A8B2D01E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2CF1E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m */; };
 		94A8B2D31E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2D11E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m */; };
 		94A8B2D41E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2D21E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m */; };
@@ -66,11 +66,11 @@
 		9424978120C42CB3002B6363 /* SimpleOAuth2Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleOAuth2Utils.h; sourceTree = "<group>"; };
 		9424978220C42CB3002B6363 /* TokenParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenParameters.h; sourceTree = "<group>"; };
 		9424978C20C42CF3002B6363 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9424979020C42DBE002B6363 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9424979320C42DFA002B6363 /* FakeAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeAFHTTPSessionManager.m; sourceTree = "<group>"; };
+		9424979420C42DFA002B6363 /* FakeAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeAFHTTPSessionManager.h; sourceTree = "<group>"; };
 		946A74741E9A8C0300889E4F /* SimpleOAuth2Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleOAuth2Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		946A74781E9A8C0400889E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9487085F1E9A858800821D65 /* SimpleOAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleOAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		94A8B2CC1E9A8CDA00852392 /* FakeAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeAFHTTPSessionManager.h; sourceTree = "<group>"; };
-		94A8B2CD1E9A8CDA00852392 /* FakeAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeAFHTTPSessionManager.m; sourceTree = "<group>"; };
 		94A8B2CF1E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleOAuth2UtilsSpecs.m; sourceTree = "<group>"; };
 		94A8B2D11E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+SimpleOAuth2Specs.m"; sourceTree = "<group>"; };
 		94A8B2D21E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleOAuth2AuthenticationManagerSpecs.m; sourceTree = "<group>"; };
@@ -132,14 +132,31 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9424978F20C42D88002B6363 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9424979020C42DBE002B6363 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9424979220C42DE1002B6363 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				9424979420C42DFA002B6363 /* FakeAFHTTPSessionManager.h */,
+				9424979320C42DFA002B6363 /* FakeAFHTTPSessionManager.m */,
+			);
+			path = Fakes;
+			sourceTree = "<group>";
+		};
 		946A74751E9A8C0400889E4F /* SimpleOAuth2Specs */ = {
 			isa = PBXGroup;
 			children = (
-				94A8B2CB1E9A8CB700852392 /* Fakes */,
+				9424979220C42DE1002B6363 /* Fakes */,
 				94A8B2D11E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m */,
 				94A8B2D21E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m */,
 				94A8B2CF1E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m */,
-				94A8B2D61E9A90C500852392 /* Resources */,
+				9424978F20C42D88002B6363 /* Supporting Files */,
 			);
 			path = SimpleOAuth2Specs;
 			sourceTree = "<group>";
@@ -151,23 +168,6 @@
 				9424977A20C42C96002B6363 /* Source */,
 			);
 			path = SimpleOAuth2;
-			sourceTree = "<group>";
-		};
-		94A8B2CB1E9A8CB700852392 /* Fakes */ = {
-			isa = PBXGroup;
-			children = (
-				94A8B2CC1E9A8CDA00852392 /* FakeAFHTTPSessionManager.h */,
-				94A8B2CD1E9A8CDA00852392 /* FakeAFHTTPSessionManager.m */,
-			);
-			name = Fakes;
-			sourceTree = "<group>";
-		};
-		94A8B2D61E9A90C500852392 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				946A74781E9A8C0400889E4F /* Info.plist */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		AFBDF4EF19E57F1A001D1061 = {
@@ -336,9 +336,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A8B2CE1E9A8CDA00852392 /* FakeAFHTTPSessionManager.m in Sources */,
 				94A8B2D41E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m in Sources */,
 				94A8B2D01E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m in Sources */,
+				9424979520C42DFA002B6363 /* FakeAFHTTPSessionManager.m in Sources */,
 				94A8B2D31E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,7 +461,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = SimpleOAuth2Specs/Info.plist;
+				INFOPLIST_FILE = "SimpleOAuth2Specs/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rkb.SimpleOAuth2Specs;
@@ -565,7 +565,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = SimpleOAuth2Specs/Info.plist;
+				INFOPLIST_FILE = "SimpleOAuth2Specs/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rkb.SimpleOAuth2Specs;
