@@ -20,7 +20,6 @@
 		946A74791E9A8C0400889E4F /* SimpleOAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9487085F1E9A858800821D65 /* SimpleOAuth2.framework */; };
 		948B9CE21EA45EE300E9684E /* SimpleOAuth2.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 9487085F1E9A858800821D65 /* SimpleOAuth2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		948B9CE31EA45EEA00E9684E /* AFNetworking.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 94A8B2D81E9C76C300852392 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		948B9CE41EA45EEA00E9684E /* libPods-SimpleOAuth2Specs.a in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 0BF6270A97432CEFA3B3540E /* libPods-SimpleOAuth2Specs.a */; };
 		94A8B2D01E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2CF1E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m */; };
 		94A8B2D31E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2D11E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m */; };
 		94A8B2D41E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2D21E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m */; };
@@ -46,7 +45,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				948B9CE31EA45EEA00E9684E /* AFNetworking.framework in Carthage Copy Files */,
-				948B9CE41EA45EEA00E9684E /* libPods-SimpleOAuth2Specs.a in Carthage Copy Files */,
 				948B9CE21EA45EE300E9684E /* SimpleOAuth2.framework in Carthage Copy Files */,
 			);
 			name = "Carthage Copy Files";
