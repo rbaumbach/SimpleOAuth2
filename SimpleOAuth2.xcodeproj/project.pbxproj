@@ -162,8 +162,8 @@
 		948708601E9A858800821D65 /* SimpleOAuth2 */ = {
 			isa = PBXGroup;
 			children = (
-				9424978B20C42CD9002B6363 /* Supporting Files */,
 				9424977A20C42C96002B6363 /* Source */,
+				9424978B20C42CD9002B6363 /* Supporting Files */,
 			);
 			path = SimpleOAuth2;
 			sourceTree = "<group>";
