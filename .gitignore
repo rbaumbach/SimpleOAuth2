@@ -1,5 +1,8 @@
-# Xcode
+# macOS
+
 .DS_Store
+
+# Xcode
 build/
 *.pbxuser
 !default.pbxuser
@@ -14,8 +17,15 @@ xcuserdata
 profile
 *.moved-aside
 DerivedData
-.idea/
+
+# Cocoapods
+
 Pods/
+
+# Jetbrains
+
+.idea/
+.fleet/
 
 # Carthage
 Carthage

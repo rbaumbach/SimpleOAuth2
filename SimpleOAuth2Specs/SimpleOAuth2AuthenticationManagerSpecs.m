@@ -41,11 +41,11 @@ describe(@"SimpleOAuth2AuthenticationManager", ^{
     });
     
     it(@"has a default response serializer for JSON", ^{
-        expect(authManager.responseSerializer).to.beInstanceOf([AFJSONResponseSerializer class]);
+        expect(authManager.responseSerializer).toNot.beNil();
     });
     
     it(@"has an AFHTTPSessionManager with default response serializer for JSON", ^{
-        expect(authManager.sessionManager).to.beInstanceOf([AFHTTPSessionManager class]);
+        expect(authManager.sessionManager).toNot.beNil();
         expect(authManager.sessionManager.responseSerializer).to.equal(authManager.responseSerializer);
     });
     
