@@ -19,7 +19,8 @@
 //OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 //WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import <AFNetworking/AFNetworking.h>
+//#import <AFNetworking/AFNetworking.h>
+@import AFNetworking;
 #import <SimpleOAuth2/SimpleOAuth2AuthenticationManager.h>
 
 @interface SimpleOAuth2AuthenticationManager ()
@@ -50,13 +51,23 @@
                         success:(void (^)(id authResponseObject))success
                         failure:(void (^)(NSError *error))failure
 {
+//    [self.sessionManager POST:authURL.absoluteString
+//                   parameters:tokenParameters
+//                     progress:nil
+//                      success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        success(responseObject);
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        failure(error);
+//    }];
+    
     [self.sessionManager POST:authURL.absoluteString
                    parameters:tokenParameters
-                     progress:nil
+                      headers:<#(nullable NSDictionary<NSString *,NSString *> *)#>
+                     progress:<#^(NSProgress * _Nonnull uploadProgress)uploadProgress#>
                       success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        success(responseObject);
+        <#code#>
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        failure(error);
+        <#code#>
     }];
 }
 

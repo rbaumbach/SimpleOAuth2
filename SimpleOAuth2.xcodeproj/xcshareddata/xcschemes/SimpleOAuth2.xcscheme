@@ -43,8 +43,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "946A74731E9A8C0300889E4F"
-               BuildableName = "SimpleOAuth2Specs.xctest"
-               BlueprintName = "SimpleOAuth2Specs"
+               BuildableName = "Specs.xctest"
+               BlueprintName = "Specs"
                ReferencedContainer = "container:SimpleOAuth2.xcodeproj">
             </BuildableReference>
          </TestableReference>
