@@ -23,7 +23,6 @@
 		94A8B2D01E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2CF1E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m */; };
 		94A8B2D31E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2D11E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m */; };
 		94A8B2D41E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2D21E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m */; };
-		94A8B2D91E9C76C300852392 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A8B2D81E9C76C300852392 /* AFNetworking.framework */; };
 		94A8B2DB1E9C784D00852392 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A8B2D81E9C76C300852392 /* AFNetworking.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,7 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A8B2D91E9C76C300852392 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

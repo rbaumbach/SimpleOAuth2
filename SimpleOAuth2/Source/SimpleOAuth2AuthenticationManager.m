@@ -19,12 +19,14 @@
 //OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 //WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import <AFNetworking/AFNetworking.h>
+//#import <AFNetworking/AFNetworking.h>
 #import <SimpleOAuth2/SimpleOAuth2AuthenticationManager.h>
 
 @interface SimpleOAuth2AuthenticationManager ()
 
-@property (strong, nonatomic) AFHTTPSessionManager *sessionManager;
+//@property (strong, nonatomic) AFHTTPSessionManager *sessionManager;
+
+@property (strong, nonatomic) NSURLSession *urlSession;
 
 @end
 
@@ -36,9 +38,10 @@
 {
     self = [super init];
     if (self) {
-        self.responseSerializer = [AFJSONResponseSerializer serializer];
-        self.sessionManager = [[AFHTTPSessionManager alloc] init];
-        self.sessionManager.responseSerializer = self.responseSerializer;
+        self.urlSession = [NSURLSession sharedSession];
+//        self.responseSerializer = [AFJSONResponseSerializer serializer];
+//        self.sessionManager = [[AFHTTPSessionManager alloc] init];
+//        self.sessionManager.responseSerializer = self.responseSerializer;
     }
     return self;
 }
@@ -50,14 +53,37 @@
                         success:(void (^)(id authResponseObject))success
                         failure:(void (^)(NSError *error))failure
 {
-    [self.sessionManager POST:authURL.absoluteString
-                   parameters:tokenParameters
-                     progress:nil
-                      success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        success(responseObject);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        failure(error);
+    [self.urlSession dataTaskWithURL:authURL
+                   completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error != nil) {
+            failure(error);
+            
+            return;
+        }
+        
+        if (![self isValidResponse:response]) {
+            // Create an NSError
+            
+            failure(nil);
+        }
+        
+
+        // need error if data is nil
+        // need error if data cannot be serialized to JSON
+        
+        
+        // Then finally complete with authResponseObject dictionary
+
+        
     }];
+//    [self.sessionManager POST:authURL.absoluteString
+//                   parameters:tokenParameters
+//                     progress:nil
+//                      success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        success(responseObject);
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        failure(error);
+//    }];
 }
 
 - (void)authenticateOAuthClient:(NSURL *)authURL
@@ -65,14 +91,25 @@
                         success:(void (^)(id authResponseObject))success
                         failure:(void (^)(NSError *error))failure
 {
-    [self.sessionManager POST:authURL.absoluteString
-                   parameters:[tokenParameters build]
-                     progress:nil
-                      success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                          success(responseObject);
-                      } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                          failure(error);
-                      }];
+//    [self.sessionManager POST:authURL.absoluteString
+//                   parameters:[tokenParameters build]
+//                     progress:nil
+//                      success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//                          success(responseObject);
+//                      } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//                          failure(error);
+//                      }];
+}
+
+#pragma mark - Private Methods
+
+- (bool)isValidResponse:(id)response
+{
+    // need error code if reponse is nil
+    // need error code if response is empty
+    // need error if response code is NOT between 200 - 299
+    
+    
 }
 
 @end

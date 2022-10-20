@@ -23,11 +23,11 @@
 
 #import "TokenParameters.h"
 
-@class AFHTTPResponseSerializer;
+//@class AFHTTPResponseSerializer;
 
 @interface SimpleOAuth2AuthenticationManager : NSObject
 
-@property (strong, nonatomic) AFHTTPResponseSerializer *responseSerializer;
+//@property (strong, nonatomic) AFHTTPResponseSerializer *responseSerializer;
 
 - (void)authenticateOAuthClient:(NSURL *)authURL
                 tokenParametersDictionary:(NSDictionary *)tokenParameters
