@@ -21,7 +21,7 @@
 
 @import Foundation;
 
-#import "TokenParameters.h"
+#import <TokenParameters.h>
 
 @class AFHTTPResponseSerializer;
 
