@@ -8,6 +8,7 @@ target "SimpleOAuth2" do
 end
 
 target "SimpleOAuth2Specs" do
+    pod 'AFNetworking', '>= 3.0.0'
     pod 'Specta'
     pod 'Expecta'
     pod 'OCMock'

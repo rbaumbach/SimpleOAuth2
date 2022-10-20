@@ -19,12 +19,9 @@
 		9424978A20C42CB3002B6363 /* TokenParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 9424978220C42CB3002B6363 /* TokenParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9424979520C42DFA002B6363 /* FakeAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9424979320C42DFA002B6363 /* FakeAFHTTPSessionManager.m */; };
 		946A74791E9A8C0400889E4F /* SimpleOAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9487085F1E9A858800821D65 /* SimpleOAuth2.framework */; };
-		948B9CE21EA45EE300E9684E /* SimpleOAuth2.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 9487085F1E9A858800821D65 /* SimpleOAuth2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		948B9CE31EA45EEA00E9684E /* AFNetworking.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 94A8B2D81E9C76C300852392 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		94A8B2D01E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2CF1E9A8D8D00852392 /* SimpleOAuth2UtilsSpecs.m */; };
 		94A8B2D31E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2D11E9A90A100852392 /* NSURLRequest+SimpleOAuth2Specs.m */; };
 		94A8B2D41E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8B2D21E9A90A100852392 /* SimpleOAuth2AuthenticationManagerSpecs.m */; };
-		94A8B2DB1E9C784D00852392 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A8B2D81E9C76C300852392 /* AFNetworking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,21 +33,6 @@
 			remoteInfo = SimpleOAuth2;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		948B9CE11EA45EC700E9684E /* Carthage Copy Files */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				948B9CE31EA45EEA00E9684E /* AFNetworking.framework in Carthage Copy Files */,
-				948B9CE21EA45EE300E9684E /* SimpleOAuth2.framework in Carthage Copy Files */,
-			);
-			name = "Carthage Copy Files";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		09FF4CEEA0EF5644CE639849 /* Pods-SimpleOAuth2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleOAuth2.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleOAuth2/Pods-SimpleOAuth2.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,7 +67,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				946A74791E9A8C0400889E4F /* SimpleOAuth2.framework in Frameworks */,
-				94A8B2DB1E9C784D00852392 /* AFNetworking.framework in Frameworks */,
 				821CAE75C815A030EBC30AC0 /* libPods-SimpleOAuth2Specs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +210,6 @@
 				946A74701E9A8C0300889E4F /* Sources */,
 				946A74711E9A8C0300889E4F /* Frameworks */,
 				946A74721E9A8C0300889E4F /* Resources */,
-				948B9CE11EA45EC700E9684E /* Carthage Copy Files */,
 			);
 			buildRules = (
 			);
@@ -414,7 +394,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -483,10 +463,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SimpleOAuth2Specs/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -519,7 +496,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -586,10 +563,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SimpleOAuth2Specs/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
